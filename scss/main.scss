@@ -1,0 +1,165 @@
+@import 'config';
+@import 'utilities';
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Afacad Flux', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Main Navbar
+#main-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  #nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-self: flex-start;
+    padding-top: 1rem;
+  }
+
+  // Logo
+  #logo {
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1rem 1.5rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+
+      &:hover {
+        border-color: $medium-color;
+      }
+
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
+// Header
+#header {
+  &-home {
+    position: relative;
+    top: calc(-80px - 1rem);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 63vh;
+    background: $bg-image no-repeat center center / cover;
+    color: #fff;
+    padding-top: 35%;
+    z-index: -1;
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+  }
+}
+
+#about {
+  margin-top: -100px;
+  a {
+    color: $dark-main-color;
+  }
+  p {
+    padding-bottom: 12px;
+  }
+}
+
+// #courses {
+// }
+
+// #contact {
+//   p {
+//     margin-left: 40px;
+
+//   }
+// }
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: set-text-color($dark-color);
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
+      }
+    }
+  }
+}

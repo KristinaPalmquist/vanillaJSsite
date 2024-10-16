@@ -1,0 +1,136 @@
+.container {
+  max-width: 1000px;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+.btn-dark, .btn-light, .btn-main {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #ffbc00;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.type-cursor {
+  border-right: #ccc solid 0.15rem;
+}
+
+.bg-main {
+  background: #ffbc00;
+  color: #333;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+.bg-medium {
+  background: #ccc;
+  color: #333;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0rem auto 1rem auto;
+}
+
+.clr {
+  float: none;
+}
+
+#main-nav #nav-content {
+  flex-direction: column;
+  align-items: center;
+}
+#main-nav #nav-content #logo {
+  font-size: 3rem;
+  /* text-align: center; */
+}
+#main-nav #nav-content ul {
+  flex-direction: row;
+  align-items: center;
+}
+#main-nav #nav-content li {
+  padding: 0.5rem 0.7rem;
+}
+
+#header-home {
+  top: calc(-80px - 11rem);
+  height: calc(100vh - 8rem);
+}
+#header-home h1 {
+  font-size: 3rem;
+  margin: 200px 40px 0;
+}
+
+/*# sourceMappingURL=mobile.css.map */
