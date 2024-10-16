@@ -32,6 +32,17 @@ img {
   width: 100%;
 }
 
+@mixin animate($animation, $duration, $method, $times) {
+  & {
+    animation: $animation $duration $method $times;
+  }
+}
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 // Main Navbar
 #main-nav {
   position: sticky;
@@ -69,22 +80,70 @@ img {
   li {
     font-size: 20px;
     font-weight: 400;
+    color: #fff;
     padding: 1rem 1.5rem;
+    // transition: transform 0.8s ease-in-out, color 0.5s ease-in-out;
+    &.drop {
+      @include keyframes(drop) {
+        0% {
+          opacity: 1;
+          color: #fff;
+        }
+        7.5% {
+          transform: translateY(20px);
+          opacity: 0.5;
+          color: #fff;
+        }
+        15% {
+          transform: translateY(40px);
+          opacity: 0;
+          color: #fff;
+        }
+        22.5% {
+          transform: translateY(-40px);
+          color: $main-color;
+        }
+        30% {
+          opacity: 0.5;
+          transform: translateY(-4px);
+        }
+        37.5% {
+          opacity: 1;
+        }
+        45% {
+          transform: translateY(4px);
+          color: $main-color;
+        }
+        52.5% {
+          transform: translateY(0);
+          color: $main-color;
+        }
+        60% {
+          transform: translateY(0);
+          color: $main-color;
+        }
+        90% {
+          transform: translateY(0);
+          color: $main-color;
+        }
+        100% {
+          color: #fff;
+        }
+      }
+      @include animate(drop, 2s, linear, 1);
+    }
+
     a {
       text-decoration: none;
-      color: #fff;
+      color: inherit;
       text-transform: uppercase;
-      border-bottom: 3px transparent solid;
       padding-bottom: 0.5rem;
       transition: border-color 0.5s;
 
       &:hover {
-        border-color: $medium-color;
+        color: $light-main-color;
       }
 
-      &.current {
-        border-color: $main-color;
-      }
     }
   }
 }
@@ -116,7 +175,7 @@ img {
 }
 
 #about {
-  margin-top: -100px;
+  margin-top: -50px;
   a {
     color: $dark-main-color;
   }

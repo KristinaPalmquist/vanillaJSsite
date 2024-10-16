@@ -82,7 +82,9 @@ const moveCursor = async () => {
 
     await sleep(1000);
 
-    pos.classList.add('type-cursor');
+    if (pos) {
+      pos.classList.add('type-cursor');
+    }
 
     await sleep(1000);
     pos.classList.remove('type-cursor');
@@ -115,16 +117,31 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Smooth Scrolling
+// Smooth scrolling on anchor tag click
 $('#main-nav a').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
     const hash = this.hash;
+
+    console.log(event.currentTarget);
     $('html, body').animate(
       {
         scrollTop: $(hash).offset().top - 120,
       },
-      800
+      1000
     );
   }
+});
+
+// style navbar item on click
+const navbarItems = document.querySelectorAll('#nav-content li');
+
+navbarItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    // navbarItems.forEach((item) => item.classList.remove('drop'));
+    item.classList.add('drop');
+    setTimeout(() => {
+      item.classList.remove('drop');
+    }, 1500);
+  });
 });
