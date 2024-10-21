@@ -63,7 +63,7 @@ $('#main-nav a').on('click', function (event) {
     const hash = this.hash;
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 120,
+        scrollTop: $(hash).offset().top - 50,
       },
       1000
     );
@@ -71,7 +71,7 @@ $('#main-nav a').on('click', function (event) {
 });
 
 // Style navbar item on click
-document.querySelectorAll('#nav-content li').forEach((item) => {
+document.querySelectorAll('#nav-bar a').forEach((item) => {
   item.addEventListener('click', () => {
     item.classList.add('drop');
     setTimeout(() => {

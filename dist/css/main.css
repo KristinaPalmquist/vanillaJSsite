@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   max-width: 1000px;
   padding: 0 1.5rem;
   margin: auto;
@@ -53,25 +54,47 @@ input[class^=btn-]:hover {
   width: 100%;
   height: 0;
 }
+.switch h3 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  right: 0;
+  cursor: pointer;
+}
 .switch i.fa-chevron-down,
 .switch i.fa-chevron-up {
   display: block;
   position: absolute;
-  top: -27px;
-  right: 0;
+  top: 0;
+  right: 6rem;
+  color: #000;
+  cursor: pointer;
 }
 .switch i.fa-chevron-up,
 .switch p {
   display: none;
 }
+.switch p {
+  margin: 1rem 6rem 0 2rem;
+}
+.switch-input:checked ~ h3 {
+  color: #ffbc00;
+}
 .switch-input:checked ~ p {
   display: block;
 }
 .switch-input:checked ~ i.fa-chevron-up {
-  display: inline;
+  display: block;
+  color: #ffbc00;
 }
 .switch-input:checked ~ i.fa-chevron-down {
   display: none;
+}
+.switch-line {
+  border-bottom: #ccc 1px dotted;
+  height: 0;
+  margin: 1rem 0;
 }
 
 .bg-main {
@@ -117,11 +140,18 @@ input[class^=btn-]:hover {
   margin: 4rem 0;
 }
 
+section {
+  min-height: 100vh;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .section-title {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
-  text-align: center;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -181,21 +211,32 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 }
-#main-nav #logo {
+#main-nav #nav-content #logo {
   font-size: 80px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
   line-height: 1;
+  padding: 0 1.5rem;
 }
-#main-nav a {
+#main-nav #nav-content a {
   text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
   color: #fff;
 }
-#main-nav ul {
-  display: flex;
+#main-nav #nav-content a:hover {
+  color: #ffd766;
 }
-#main-nav li {
+#main-nav #nav-content #nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+#main-nav #nav-content #nav-bar a {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
@@ -247,23 +288,13 @@ img {
     color: #fff;
   }
 }
-#main-nav li.drop {
+#main-nav #nav-content #nav-bar a.drop {
   animation: drop 2s linear 1;
-}
-#main-nav li a {
-  text-decoration: none;
-  color: inherit;
-  text-transform: uppercase;
-  padding-bottom: 0.5rem;
-  transition: border-color 0.5s;
-}
-#main-nav li a:hover {
-  color: #ffd766;
 }
 
 #header-home {
   position: relative;
-  top: calc(-80px - 1rem);
+  top: calc(-110px - 1rem);
   left: 0;
   right: 0;
   width: 100%;
@@ -277,19 +308,25 @@ img {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
+  padding: 1rem 1.5rem;
 }
 #header-home .hide {
   visibility: hidden;
 }
 
-#about {
-  margin-top: -50px;
-}
 #about a {
   color: #b38400;
 }
 #about p {
   padding-bottom: 12px;
+}
+
+#contact {
+  text-align: end;
+}
+#contact p {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
 }
 
 #main-footer {

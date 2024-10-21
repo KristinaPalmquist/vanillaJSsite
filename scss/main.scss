@@ -55,82 +55,15 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // align-self: flex-start;
     padding-top: 1rem;
-  }
-
-  // Logo
-  #logo {
-    font-size: 80px;
-    font-weight: 400;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 1;
-  }
-
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    padding: 1rem 1.5rem;
-    // transition: transform 0.8s ease-in-out, color 0.5s ease-in-out;
-    &.drop {
-      @include keyframes(drop) {
-        0% {
-          opacity: 1;
-          color: #fff;
-        }
-        7.5% {
-          transform: translateY(20px);
-          opacity: 0.5;
-          color: #fff;
-        }
-        15% {
-          transform: translateY(40px);
-          opacity: 0;
-          color: #fff;
-        }
-        22.5% {
-          transform: translateY(-40px);
-          color: $main-color;
-        }
-        30% {
-          opacity: 0.5;
-          transform: translateY(-4px);
-        }
-        37.5% {
-          opacity: 1;
-        }
-        45% {
-          transform: translateY(4px);
-          color: $main-color;
-        }
-        52.5% {
-          transform: translateY(0);
-          color: $main-color;
-        }
-        60% {
-          transform: translateY(0);
-          color: $main-color;
-        }
-        90% {
-          transform: translateY(0);
-          color: $main-color;
-        }
-        100% {
-          color: #fff;
-        }
-      }
-      @include animate(drop, 2s, linear, 1);
+    
+    #logo {
+      font-size: 80px;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1;
+      padding: 0 1.5rem;
     }
 
     a {
@@ -139,9 +72,73 @@ img {
       text-transform: uppercase;
       padding-bottom: 0.5rem;
       transition: border-color 0.5s;
+      color: #fff;
 
       &:hover {
         color: $light-main-color;
+      }
+    }
+    #nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 1rem;
+
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        padding: 1rem 1.5rem;
+
+        &.drop {
+          @include keyframes(drop) {
+            0% {
+              opacity: 1;
+              color: #fff;
+            }
+            7.5% {
+              transform: translateY(20px);
+              opacity: 0.5;
+              color: #fff;
+            }
+            15% {
+              transform: translateY(40px);
+              opacity: 0;
+              color: #fff;
+            }
+            22.5% {
+              transform: translateY(-40px);
+              color: $main-color;
+            }
+            30% {
+              opacity: 0.5;
+              transform: translateY(-4px);
+            }
+            37.5% {
+              opacity: 1;
+            }
+            45% {
+              transform: translateY(4px);
+              color: $main-color;
+            }
+            52.5% {
+              transform: translateY(0);
+              color: $main-color;
+            }
+            60% {
+              transform: translateY(0);
+              color: $main-color;
+            }
+            90% {
+              transform: translateY(0);
+              color: $main-color;
+            }
+            100% {
+              color: #fff;
+            }
+          }
+          @include animate(drop, 2s, linear, 1);
+        }
       }
     }
   }
@@ -151,7 +148,7 @@ img {
 #header {
   &-home {
     position: relative;
-    top: calc(-80px - 1rem);
+    top: calc(-110px - 1rem);
     left: 0;
     right: 0;
     width: 100%;
@@ -165,6 +162,7 @@ img {
       font-size: 4rem;
       font-weight: 400;
       line-height: 1.2;
+      padding: 1rem 1.5rem;
     }
 
     .hide {
@@ -174,7 +172,6 @@ img {
 }
 
 #about {
-  margin-top: -50px;
   a {
     color: $dark-main-color;
   }
@@ -186,12 +183,13 @@ img {
 // #courses {
 // }
 
-// #contact {
-//   p {
-//     margin-left: 40px;
-
-//   }
-// }
+#contact {
+  text-align: end;
+  p {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
 
 // Footer
 #main-footer {

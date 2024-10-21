@@ -51,22 +51,20 @@
     <nav id="main-nav">
       <div class="container" id="nav-content">
         <p id="logo"><a href="#about">KP.</a></p>
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div id="nav-bar">
+          <a href="#header-home">Home</a>
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </nav>
 
-    <!-- Header -->
+    <!--  Header -->
     <header id="header-home">
       <div class="container">
-        <h1>
-          Kristina Palmquist
-          <!-- — -->
-          -
+        <h1 id="home">
+          Kristina Palmquist -
           <span
             class="txt-type type-cursor"
             data-wait="3000"
@@ -76,13 +74,14 @@
         </h1>
       </div>
     </header>
+
     <section id="about" class="py-1">
       <div class="container">
-        <h2 class="py-1">About</h2>
+        <h2 class="py-1 section-title">About</h2>
         <div class="section-div">
-          <h3>Intro</h3>
           <label class="switch">
             <input type="checkbox" class="switch-input" />
+            <h3>Intro</h3>
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-chevron-up"></i>
             <p>
@@ -95,12 +94,13 @@
               in finance, mainly accounts receivables and payables payables,
               reconciliation, and accounting.
             </p>
+            <div class="switch-line"></div>
           </label>
         </div>
         <div class="section-div">
-          <h3>Education</h3>
           <label class="switch">
             <input type="checkbox" class="switch-input" />
+            <h3>Education</h3>
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-chevron-up"></i>
             <p>
@@ -111,14 +111,14 @@
               University. After that I have continued with parallel University
               studies within the IT field to broaden my knowledge.
             </p>
+            <div class="switch-line"></div>
           </label>
         </div>
 
         <div class="section-div">
-          <h3>Internship</h3>
-
           <label class="switch">
             <input type="checkbox" class="switch-input" />
+            <h3>Internship</h3>
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-chevron-up"></i>
             <p>
@@ -148,14 +148,15 @@
               Fill was founded in 2021. frontend development in Angular a little
               bit of backend in Kotlin Supervisor/mentor:
               <a href="">Faik Siddiqi</a>
-            </p></label
-          >
+            </p>
+            <div class="switch-line"></div>
+          </label>
         </div>
 
         <div class="section-div">
-          <h3>Interests within programming</h3>
           <label class="switch">
             <input type="checkbox" class="switch-input" />
+            <h3>Interests within programming</h3>
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-chevron-up"></i>
             <p>
@@ -172,19 +173,23 @@
               independently. In parallel with my job search, I enhance my skills
               through courses at university and online as well as listening to
               podcasts and reading online articles.
-            </p></label
-          >
+            </p>
+
+            <div class="switch-line"></div>
+          </label>
         </div>
       </div>
     </section>
     <section id="courses" class="py-1">
       <div class="container">
-        <h2 class="py-1">Courses</h2>
+        <h2 class="py-1 section-title">Courses</h2>
         <p>Vad ska detta stycke vara till för?</p>
         <p>Kanske ett urval av komponenter?</p>
         <ul>
           <li>login-ruta</li>
           <li>kontaktformulär</li>
+          <li>searchbar</li>
+
           <li>
             nåt som visar början på ett designsystem?
             <ul>
@@ -199,7 +204,7 @@
     </section>
     <section id="contact" class="py-1">
       <div class="container">
-        <h2 class="py-1">Contact</h2>
+        <h2 class="py-1 section-title">Contact</h2>
         <p>Kristina Palmquist</p>
         <p>kristina.palmquist@gmail.com</p>
         <p>0739500790</p>
