@@ -48,7 +48,6 @@
   </head>
 
   <body>
-
     <!-- Navbar -->
     <nav id="main-nav">
       <div class="container" id="nav-content">
@@ -56,7 +55,9 @@
         <div id="nav-bar">
           <a href="#main-header">Home</a>
           <a href="#about">About</a>
-          <a href="#courses">Courses</a>
+          <a href="#courses">Courses</a> <a href="#summary">summary</a>
+          <a href="#dialog">dialog</a>
+
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -64,22 +65,26 @@
 
     <!--  Header -->
     <header id="main-header">
+      <div id="main-image"></div>
+
       <div class="container">
         <h1 id="home">
           Kristina Palmquist -
           <span
             class="txt-type type-cursor"
             data-wait="3000"
-            data-words='["JavaScript Dev", "Frontend Dev", "Fullstack Dev"]'
+            data-words='[
+            "JavaScript Dev", "Frontend Dev", "Fullstack Dev"]'
           >
           </span>
         </h1>
       </div>
     </header>
 
-    <!-- About -->
-    <section id="about" class="py-1">
-      <div class="container">
+    <div class="container">
+      <!-- About -->
+      <section id="about" class="py-1">
+        <!-- <div class="container"> -->
         <h2 class="py-1 section-title">About</h2>
         <div class="section-div">
           <label class="switch">
@@ -100,6 +105,7 @@
             <div class="switch-line"></div>
           </label>
         </div>
+
         <div class="section-div">
           <label class="switch">
             <input type="checkbox" class="switch-input" />
@@ -177,18 +183,17 @@
               through courses at university and online as well as listening to
               podcasts and reading online articles.
             </p>
-
             <div class="switch-line"></div>
           </label>
         </div>
-      </div>
-    </section>
+        <!-- </div> -->
+      </section>
 
-    <!-- Courses -->
-    <section id="courses" class="py-1">
-      <div class="container">
+      <!-- Courses -->
+      <section id="courses" class="py-1">
+        <!-- <div class="container"> -->
         <h2 class="py-1 section-title">Courses</h2>
-        <p>Vad ska detta stycke vara till för?</p>
+        <p>Vad ska detta stycke vara till för? Vore skoj med lite bilder.</p>
         <p>Kanske ett urval av komponenter?</p>
         <ul>
           <li>login-ruta</li>
@@ -196,7 +201,7 @@
           <li>searchbar</li>
 
           <li>
-            nåt som visar början på ett designsystem?
+            Början på ett designsystem?
             <ul>
               <li>knappar</li>
               <li>rubriker</li>
@@ -205,18 +210,54 @@
             </ul>
           </li>
         </ul>
-      </div>
-    </section>
+        <!-- </div> -->
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-1">
-      <div class="container">
+      <!-- Details / Summary -->
+      <section id="summary">
+        <!-- <div class="container"> -->
+        <details class="details">
+          <summary class="summary">HEJSAN</summary>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro
+            illo sunt quo tenetur nulla rem suscipit quam animi delectus?
+          </p>
+        </details>
+        <!-- </div> -->
+      </section>
+
+      <!-- Dialog -->
+      <section id="dialog">
+        <!-- <div class="container"> -->
+        <dialog id="myDialog" class="dialog">
+          <p>This is a modal dialog</p>
+          <button
+            onclick="document.getElementById('myDialog').close()"
+            class="btn-main"
+          >
+            Close
+          </button>
+        </dialog>
+
+        <button
+          onclick="document.getElementById('myDialog').showModal()"
+          class="btn-main"
+        >
+          Open Dialog
+        </button>
+        <!-- </div> -->
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-1">
+        <!-- <div class="container"> -->
         <h2 class="py-1 section-title">Contact</h2>
         <p>Kristina Palmquist</p>
         <p>kristina.palmquist@gmail.com</p>
         <p>0739500790</p>
-      </div>
-    </section>
+        <!-- </div> -->
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">

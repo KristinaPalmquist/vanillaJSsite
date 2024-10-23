@@ -11,6 +11,8 @@
   transition: all 0.5s;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .btn-main {
@@ -97,6 +99,34 @@ input[class^=btn-]:hover {
   margin: 1rem 0;
 }
 
+.details {
+  position: absolute;
+  width: 100%;
+}
+.details .summary::marker {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .bg-main {
   background: #ffbc00;
   color: #333;
@@ -145,6 +175,7 @@ section {
   width: 1000px;
   margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -291,24 +322,41 @@ img {
 
 #main-header {
   position: relative;
-  top: calc(-110px - 1rem);
+  top: -6rem;
+  left: 0;
+  height: 100vh;
+}
+#main-header #main-image {
+  display: block;
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 63vh;
-  background: url("../img/pexels-pixels-elements-27756786.jpg") no-repeat center center/cover;
-  color: #fff;
-  padding-top: 35%;
+  height: 100%;
+  background: url("../img/pexels-eyad-bayan-257258-787581.jpg") no-repeat center center/cover;
   z-index: -1;
 }
-#main-header h1 {
+#main-header #main-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#main-header #home {
+  padding-top: 35%;
+  color: #fff;
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.2;
-  padding: 1rem 1.5rem;
 }
-#main-header .hide {
-  visibility: hidden;
+
+#summary .summary {
+  display: flex;
+  justify-content: space-between;
 }
 
 #about a {
@@ -331,24 +379,8 @@ img {
   color: set-text-color(#333);
   height: 5rem;
 }
-#main-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  height: 5rem;
-  align-items: center;
-}
-#main-footer .footer-content .social .fab {
-  margin-right: 1rem;
-  border: 2px #fff solid;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  line-height: 20px;
-  text-align: center;
-  padding: 0.5rem;
-}
-#main-footer .footer-content .social .fab:hover {
-  background: #ffbc00;
+#main-footer .container {
+  padding-top: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

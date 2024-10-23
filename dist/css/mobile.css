@@ -11,6 +11,8 @@
   transition: all 0.5s;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .btn-main {
@@ -97,6 +99,34 @@ input[class^=btn-]:hover {
   margin: 1rem 0;
 }
 
+.details {
+  position: absolute;
+  width: 100%;
+}
+.details .summary::marker {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .bg-main {
   background: #ffbc00;
   color: #333;
@@ -145,6 +175,7 @@ section {
   width: 1000px;
   margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -193,8 +224,12 @@ section .switch p {
 }
 
 .container {
-  width: 100%;
+  width: 95vw;
   padding: 0;
+}
+
+#main-header {
+  top: -10rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -213,8 +248,8 @@ section .switch p {
     padding: 0.5rem 0.7rem;
   }
   #main-header {
-    top: calc(-80px - 10rem);
-    height: calc(100vh - 8rem);
+    top: -21rem;
+    height: 100vh;
   }
   #main-header h1 {
     font-size: 3rem;

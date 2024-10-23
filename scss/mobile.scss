@@ -26,8 +26,12 @@ section {
   }
 }
 .container {
-  width: 100%;
+  width: 95vw;
   padding: 0;
+}
+
+#main-header {
+  top: -10rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -49,8 +53,8 @@ section {
     }
   }
   #main-header {
-    top: calc(-80px - 10rem);
-    height: calc(100vh - 8rem);
+    top: - 21rem;
+    height: 100vh;
     h1 {
       font-size: 3rem;
       margin: 200px 40px 0;

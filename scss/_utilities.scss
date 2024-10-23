@@ -13,25 +13,24 @@
   transition: all 0.5s;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .btn {
   &-main {
     @extend %btn-shared;
     color: $dark-color;
-    // color: #333;
     background-color: $main-color;
   }
   &-light {
     @extend %btn-shared;
     color: $dark-color;
-    // color: #333;
     background-color: $light-color;
   }
   &-dark {
     @extend %btn-shared;
     color: $light-color;
-    // color: #f4f4f4;
     background-color: $dark-color;
   }
 }
@@ -108,6 +107,40 @@ input[class^='btn-']:hover {
   }
 }
 
+// Summary
+.details {
+  position: absolute;
+  width: 100%;
+  .summary {
+
+    
+    &::marker {
+    position: relative;
+    top: 0;
+    right: 0;
+  }  }
+
+}
+
+// Dialog
+.dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 200px;
+  border: 1px solid $medium-color;
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 // Backgrounds
 .bg {
   &-main {
@@ -165,6 +198,8 @@ section {
   width: $website-width;
   margin: auto;
   display: flex;
+
+  flex-direction: column;
   justify-content: center;
   // align-items: center;
 }
