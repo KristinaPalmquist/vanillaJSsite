@@ -1,6 +1,32 @@
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: clamp(320px, 90%, 1000px);
   padding: 0 1.5rem;
   margin: auto;
 }
@@ -31,7 +57,7 @@
 button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
-  background-color: #ffbc00;
+  background-color: #ffd766;
 }
 
 .lead {
@@ -47,68 +73,61 @@ input[class^=btn-]:hover {
   border-right: #ccc solid 0.15rem;
 }
 
-.switch {
-  position: relative;
-  display: inline;
+* {
+  margin: 0;
+  padding: 0;
 }
-.switch-input {
-  opacity: 0;
-  width: 100%;
-  height: 0;
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
 }
-.switch h3 {
+
+p {
+  font-size: 1.25rem;
+  padding-bottom: 12px;
+}
+
+h2,
+h3 {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 2rem;
-  right: 0;
-  cursor: pointer;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
 }
-.switch i.fa-chevron-down,
-.switch i.fa-chevron-up {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 6rem;
-  color: #000;
-  cursor: pointer;
+
+h2 {
+  font-size: 2rem;
 }
-.switch i.fa-chevron-up,
-.switch p {
-  display: none;
+
+h3 {
+  font-size: 1.5rem;
 }
-.switch p {
-  margin: 1rem 6rem 0 2rem;
+
+a {
+  text-decoration: none;
+  color: #b38400;
 }
-.switch-input:checked ~ h3 {
+a:hover {
   color: #ffbc00;
 }
-.switch-input:checked ~ p {
-  display: block;
-}
-.switch-input:checked ~ i.fa-chevron-up {
-  display: block;
-  color: #ffbc00;
-}
-.switch-input:checked ~ i.fa-chevron-down {
-  display: none;
-}
-.switch-line {
-  border-bottom: #ccc 1px dotted;
-  height: 0;
-  margin: 1rem 0;
+
+section {
+  min-height: 100vh;
+  width: clamp(320px, 90%, 1000px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 details {
   padding: 1rem 0;
   border-bottom: #ccc 1px dotted;
 }
-details[open] > summary::after {
-  transform: rotate(90deg);
-}
 details summary {
-  padding: 1rem 0;
-  width: 50%;
+  width: 67%;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -124,8 +143,11 @@ details summary:after {
   transition: 0.2s;
   align-self: center;
 }
+details[open] summary::after {
+  transform: rotate(90deg);
+}
 details p {
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 dialog[open] {
@@ -144,104 +166,6 @@ dialog[open] {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-.bg-main {
-  background: #ffbc00;
-  color: #333;
-}
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-.bg-dark {
-  background: #333;
-  color: #f4f4f4;
-}
-.bg-medium {
-  background: #ccc;
-  color: #333;
-}
-
-.py-1 {
-  padding: 1rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-}
-.py-4 {
-  padding: 4rem 0;
-}
-
-.my-1 {
-  margin: 1rem 0;
-}
-.my-2 {
-  margin: 2rem 0;
-}
-.my-3 {
-  margin: 3rem 0;
-}
-.my-4 {
-  margin: 4rem 0;
-}
-
-section {
-  min-height: 100vh;
-  width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-title {
-  font-size: 2rem;
-  display: block;
-  padding-bottom: 0.5rem;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-.bottom-line {
-  height: 2px;
-  width: 3rem;
-  background: #ffbc00;
-  display: block;
-  margin: 0rem auto 1rem auto;
-}
-
-.clr {
-  float: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Afacad Flux", sans-serif;
-  line-height: 1.6;
-  background: #fff;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
-img {
-  width: 100%;
 }
 
 #main-nav {
@@ -372,19 +296,29 @@ img {
   line-height: 1.2;
 }
 
-#about a {
-  color: #b38400;
-}
-#about p {
-  padding-bottom: 12px;
-}
-
 #contact {
+  width: 100%;
+}
+#contact-details {
+  width: 100%;
   text-align: end;
 }
+#contact-cv #cv-btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#contact-cv #cv-btns button {
+  width: 8rem;
+}
 #contact p {
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
+  line-height: 2;
+}
+#contact p a {
+  color: #b38400;
+}
+#contact p a:hover {
+  color: #ffbc00;
 }
 
 #main-footer {

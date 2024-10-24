@@ -14,35 +14,101 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: $dark-color;
+p {
+  font-size: 1.25rem;
+  padding-bottom: 12px;
 }
 
-// ul {
-//   list-style: none;
-// }
-
 h2,
-h3,
-h4 {
+h3 {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
-img {
-  width: 100%;
+h2 {
+  font-size: 2rem;
 }
 
-@mixin animate($animation, $duration, $method, $times) {
-  & {
-    animation: $animation $duration $method $times;
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-main-color;
+
+  &:hover {
+    color: $main-color;
   }
 }
-@mixin keyframes($name) {
-  @keyframes #{$name} {
-    @content;
+
+// img {
+//   width: 100%;
+// }
+
+section {
+  min-height: 100vh;
+  width: $website-width;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+details {
+  padding: 1rem 0;
+  border-bottom: $medium-color 1px dotted;
+
+  summary {
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      background: $arrow-image no-repeat center center/cover;
+      margin-left: 1rem;
+      transition: 0.2s;
+      align-self: center;
+    }
+  }
+
+  &[open] {
+    summary::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  p {
+    padding: 1rem 0;
   }
 }
+
+dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 200px;
+  border: 1px solid $medium-color;
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 
 // Navbar
 #main-nav {
@@ -54,7 +120,6 @@ img {
 
   #nav-content {
     display: flex;
-    // flex-grow: 1;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 1rem;
@@ -190,20 +255,14 @@ img {
   // }
 }
 
-// About Section
-#about {
-  a {
-    color: $dark-main-color;
-  }
-  p {
-    padding-bottom: 12px;
-  }
-}
+// // About Section
+// #about {
+
+// }
 
 // // Courses Section
 // #courses {
 // }
-
 
 // // Details / Summary
 // #summary {
@@ -213,14 +272,45 @@ img {
 //   }
 // }
 
-
 // Contact Section
 #contact {
-  text-align: end;
-  p {
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
+  width: 100%;
+
+  &-details {
+    width: 100%;
+    text-align: end;
   }
+
+  &-cv {
+    #cv-btns {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      gap: 2rem;
+      button {
+        width: 8rem;
+      }
+    }
+  }
+  // text-align: center;
+  // & > div {
+  // margin-top: 5vh;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+
+  p {
+    // letter-spacing: 0.1rem;
+    line-height: 2;
+    a {
+      color: $dark-main-color;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+  // }
 }
 
 // Footer

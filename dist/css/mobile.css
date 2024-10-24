@@ -1,6 +1,32 @@
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: clamp(320px, 90%, 1000px);
   padding: 0 1.5rem;
   margin: auto;
 }
@@ -31,7 +57,7 @@
 button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
-  background-color: #ffbc00;
+  background-color: #ffd766;
 }
 
 .lead {
@@ -45,176 +71,6 @@ input[class^=btn-]:hover {
 
 .type-cursor {
   border-right: #ccc solid 0.15rem;
-}
-
-.switch {
-  position: relative;
-  display: inline;
-}
-.switch-input {
-  opacity: 0;
-  width: 100%;
-  height: 0;
-}
-.switch h3 {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 2rem;
-  right: 0;
-  cursor: pointer;
-}
-.switch i.fa-chevron-down,
-.switch i.fa-chevron-up {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 6rem;
-  color: #000;
-  cursor: pointer;
-}
-.switch i.fa-chevron-up,
-.switch p {
-  display: none;
-}
-.switch p {
-  margin: 1rem 6rem 0 2rem;
-}
-.switch-input:checked ~ h3 {
-  color: #ffbc00;
-}
-.switch-input:checked ~ p {
-  display: block;
-}
-.switch-input:checked ~ i.fa-chevron-up {
-  display: block;
-  color: #ffbc00;
-}
-.switch-input:checked ~ i.fa-chevron-down {
-  display: none;
-}
-.switch-line {
-  border-bottom: #ccc 1px dotted;
-  height: 0;
-  margin: 1rem 0;
-}
-
-details {
-  padding: 1rem 0;
-  border-bottom: #ccc 1px dotted;
-}
-details[open] > summary::after {
-  transform: rotate(90deg);
-}
-details summary {
-  padding: 1rem 0;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-details summary:after {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  background: url("../img/arrow.png") no-repeat center center/cover;
-  margin-left: 1rem;
-  transition: 0.2s;
-  align-self: center;
-}
-details p {
-  padding-bottom: 1rem;
-}
-
-dialog[open] {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 300px;
-  min-height: 200px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.bg-main {
-  background: #ffbc00;
-  color: #333;
-}
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-.bg-dark {
-  background: #333;
-  color: #f4f4f4;
-}
-.bg-medium {
-  background: #ccc;
-  color: #333;
-}
-
-.py-1 {
-  padding: 1rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-}
-.py-4 {
-  padding: 4rem 0;
-}
-
-.my-1 {
-  margin: 1rem 0;
-}
-.my-2 {
-  margin: 2rem 0;
-}
-.my-3 {
-  margin: 3rem 0;
-}
-.my-4 {
-  margin: 4rem 0;
-}
-
-section {
-  min-height: 100vh;
-  width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-title {
-  font-size: 2rem;
-  display: block;
-  padding-bottom: 0.5rem;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-.bottom-line {
-  height: 2px;
-  width: 3rem;
-  background: #ffbc00;
-  display: block;
-  margin: 0rem auto 1rem auto;
-}
-
-.clr {
-  float: none;
 }
 
 #main-nav {

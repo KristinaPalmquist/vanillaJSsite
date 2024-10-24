@@ -55,9 +55,7 @@
         <div id="nav-bar">
           <a href="#main-header">Home</a>
           <a href="#about">About</a>
-          <a href="#courses">Courses</a> <a href="#summary">summary</a>
-          <a href="#dialog">dialog</a>
-
+          <a href="#courses">Courses</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -100,6 +98,7 @@
               reconciliation, and accounting.
             </p>
           </details>
+
           <details>
             <summary>Education</summary>
             <p>
@@ -111,49 +110,9 @@
               studies within the IT field to broaden my knowledge.
             </p>
           </details>
-          <label class="switch">
-            <input type="checkbox" class="switch-input" />
-            <h3>Intro</h3>
-            <i class="fas fa-chevron-down"></i>
-            <i class="fas fa-chevron-up"></i>
-            <p>
-              My name is Kristina Palmquist and I'm a JavaScript Developer
-              living in Stockholm with my partner and two children. We have a
-              comfortable apartment in Liljeholmen and an allotment with a small
-              cabin where we spend a lot of our freetime during the summer. I
-              also enjoy puzzles, bot crossword and jigsaw, walking and
-              knitting. I got interested in programming after working 20+ years
-              in finance, mainly accounts receivables and payables payables,
-              reconciliation, and accounting.
-            </p>
-            <div class="switch-line"></div>
-          </label>
-        </div>
 
-        <div class="section-div">
-          <label class="switch">
-            <input type="checkbox" class="switch-input" />
-            <h3>Education</h3>
-            <i class="fas fa-chevron-down"></i>
-            <i class="fas fa-chevron-up"></i>
-            <p>
-              I have a degree in JavaScript Development from IT-Högskolan, a
-              vocational university, where I acquired a strong base in fullstack
-              and frontend development. During my first year at IT-Högskolan I
-              also finished my bachelor’s degree in business at Stockholm
-              University. After that I have continued with parallel University
-              studies within the IT field to broaden my knowledge.
-            </p>
-            <div class="switch-line"></div>
-          </label>
-        </div>
-
-        <div class="section-div">
-          <label class="switch">
-            <input type="checkbox" class="switch-input" />
-            <h3>Internship</h3>
-            <i class="fas fa-chevron-down"></i>
-            <i class="fas fa-chevron-up"></i>
+          <details>
+            <summary>Internship</summary>
             <p>
               During the education I have successfully completed internships at
               two different startup companies with SaaS solutions (both in
@@ -182,16 +141,10 @@
               bit of backend in Kotlin Supervisor/mentor:
               <a href="">Faik Siddiqi</a>
             </p>
-            <div class="switch-line"></div>
-          </label>
-        </div>
+          </details>
 
-        <div class="section-div">
-          <label class="switch">
-            <input type="checkbox" class="switch-input" />
-            <h3>Interests within programming</h3>
-            <i class="fas fa-chevron-down"></i>
-            <i class="fas fa-chevron-up"></i>
+          <details>
+            <summary>Interests within programming</summary>
             <p>
               I enjoy implementing design and functionality, focusing on the
               user experience and responsiveness, with or without frameworks. My
@@ -207,15 +160,12 @@
               through courses at university and online as well as listening to
               podcasts and reading online articles.
             </p>
-            <div class="switch-line"></div>
-          </label>
+          </details>
         </div>
-        <!-- </div> -->
       </section>
 
       <!-- Courses -->
       <section id="courses" class="py-1">
-        <!-- <div class="container"> -->
         <h2 class="py-1 section-title">Courses</h2>
         <p>Vad ska detta stycke vara till för? Vore skoj med lite bilder.</p>
         <p>Kanske ett urval av komponenter?</p>
@@ -234,57 +184,51 @@
             </ul>
           </li>
         </ul>
-        <!-- </div> -->
-      </section>
-
-      <!-- Details / Summary -->
-      <section id="summary">
-        <details>
-          <summary>Hejsan</summary>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro
-            illo sunt quo tenetur nulla rem suscipit quam animi delectus?
-          </p>
-        </details>
-        <details>
-          <summary>Hejsan</summary>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro
-            illo sunt quo tenetur nulla rem suscipit quam animi delectus?
-          </p>
-        </details>
-      </section>
-
-      <!-- Dialog -->
-      <section id="dialog">
-        <!-- <div class="container"> -->
-        <dialog id="myDialog" class="dialog">
-          <p>This is a modal dialog</p>
-          <button
-            onclick="document.getElementById('myDialog').close()"
-            class="btn-main"
-          >
-            Close
-          </button>
-        </dialog>
-
-        <button
-          onclick="document.getElementById('myDialog').showModal()"
-          class="btn-main"
-        >
-          Open Dialog
-        </button>
-        <!-- </div> -->
       </section>
 
       <!-- Contact -->
       <section id="contact" class="py-1">
-        <!-- <div class="container"> -->
         <h2 class="py-1 section-title">Contact</h2>
-        <p>Kristina Palmquist</p>
-        <p>kristina.palmquist@gmail.com</p>
-        <p>0739500790</p>
-        <!-- </div> -->
+        <div id="contact-details">
+          <p>Kristina Palmquist</p>
+          <p>
+            <a href="mailto:kristina.palmquist@gmail.com"
+              >kristina.palmquist@gmail.com
+            </a>
+          </p>
+          <p>0739500790</p>
+        </div>
+
+        <div id="contact-cv">
+          <h3 class="py-1">CV</h3>
+          <div id="cv-btns" class="py-1">
+          <p>Choose to download my CV or display on screen</p>
+          <!-- <div id="cv-btns" class="py-1"> -->
+            <button class="btn-main my-1">
+              <a href="./pdf/CV_Kristina_Palmquist.pdf" download>Download</a>
+            </button>
+            <dialog id="myDialog" class="dialog">
+              <embed
+                src="./pdf/CV_Kristina_Palmquist.pdf#page=1&zoom=50"
+                width="800px"
+                height="2100px"
+              />
+              <button
+                onclick="document.getElementById('myDialog').close()"
+                class="btn-main"
+              >
+                Close
+              </button>
+            </dialog>
+
+            <button
+              onclick="document.getElementById('myDialog').showModal()"
+              class="btn-main my-2"
+            >
+              Display
+            </button>
+          </div>
+        </div>
       </section>
     </div>
 
