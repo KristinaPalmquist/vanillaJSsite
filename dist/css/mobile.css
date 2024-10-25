@@ -33,6 +33,8 @@
 
 .btn-dark, .btn-light, .btn-main {
   display: inline-block;
+  font-size: 1.1rem;
+  min-width: 10rem;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
@@ -44,6 +46,12 @@
 .btn-main {
   color: #333;
   background-color: #ffbc00;
+}
+.btn-main a {
+  color: #000;
+}
+.btn-main a:hover {
+  color: #b38400;
 }
 .btn-light {
   color: #333;
@@ -58,6 +66,7 @@ button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
   background-color: #ffd766;
+  color: #b38400;
 }
 
 .lead {
@@ -86,7 +95,8 @@ input[class^=btn-]:hover {
 section {
   width: 100%;
 }
-section h2 {
+section h2,
+section h3 {
   text-align: center;
 }
 section .switch i.fa-chevron-down,
@@ -104,6 +114,21 @@ section .switch p {
 
 #main-header {
   top: -10rem;
+}
+
+#contact {
+  width: 100%;
+  text-align: center;
+}
+
+#cv #cv-btns {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#cv #cv-btns .btn-main a {
+  color: inherit;
 }
 
 @media screen and (max-width: 500px) {

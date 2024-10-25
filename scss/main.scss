@@ -12,11 +12,12 @@ body {
   line-height: 1.6;
   background: #fff;
   overflow-x: hidden;
+  accent-color: $main-color;
 }
 
 p {
   font-size: 1.25rem;
-  padding-bottom: 12px;
+  padding: 0.4rem 0;
 }
 
 h2,
@@ -55,7 +56,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-
 
 details {
   padding: 1rem 0;
@@ -108,7 +108,6 @@ dialog[open] {
   align-items: center;
   gap: 2rem;
 }
-
 
 // Navbar
 #main-nav {
@@ -276,42 +275,35 @@ dialog[open] {
 #contact {
   width: 100%;
 
-  &-details {
-    width: 100%;
-    text-align: end;
-  }
-
-  &-cv {
-    #cv-btns {
-      display: flex;
-      align-items: center;
-      // justify-content: center;
-      gap: 2rem;
-      button {
-        width: 8rem;
-      }
-    }
-  }
-  // text-align: center;
-  // & > div {
-  // margin-top: 5vh;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-
-  p {
-    // letter-spacing: 0.1rem;
-    line-height: 2;
-    a {
-      color: $dark-main-color;
-      &:hover {
-        color: $main-color;
-      }
-    }
-  }
-  // }
+  text-align: end;
 }
+
+#cv {
+  #cv-btns {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 2rem;
+    
+    .btn-main {
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+// p {
+//   // letter-spacing: 0.1rem;
+//   line-height: 2;
+//   a {
+//     color: $dark-main-color;
+//     &:hover {
+//       color: $main-color;
+//     }
+//   }
+// }
+// }
 
 // Footer
 #main-footer {

@@ -33,6 +33,8 @@
 
 .btn-dark, .btn-light, .btn-main {
   display: inline-block;
+  font-size: 1.1rem;
+  min-width: 10rem;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
@@ -44,6 +46,12 @@
 .btn-main {
   color: #333;
   background-color: #ffbc00;
+}
+.btn-main a {
+  color: #000;
+}
+.btn-main a:hover {
+  color: #b38400;
 }
 .btn-light {
   color: #333;
@@ -58,6 +66,7 @@ button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
   background-color: #ffd766;
+  color: #b38400;
 }
 
 .lead {
@@ -83,11 +92,12 @@ body {
   line-height: 1.6;
   background: #fff;
   overflow-x: hidden;
+  accent-color: #ffbc00;
 }
 
 p {
   font-size: 1.25rem;
-  padding-bottom: 12px;
+  padding: 0.4rem 0;
 }
 
 h2,
@@ -298,27 +308,16 @@ dialog[open] {
 
 #contact {
   width: 100%;
-}
-#contact-details {
-  width: 100%;
   text-align: end;
 }
-#contact-cv #cv-btns {
+
+#cv #cv-btns {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-#contact-cv #cv-btns button {
-  width: 8rem;
-}
-#contact p {
-  line-height: 2;
-}
-#contact p a {
-  color: #b38400;
-}
-#contact p a:hover {
-  color: #ffbc00;
+#cv #cv-btns .btn-main a {
+  color: inherit;
 }
 
 #main-footer {

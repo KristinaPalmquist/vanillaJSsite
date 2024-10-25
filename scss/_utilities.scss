@@ -40,6 +40,8 @@
 // Buttons
 %btn-shared {
   display: inline-block;
+  font-size: 1.1rem;
+  min-width: 10rem;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
@@ -53,7 +55,16 @@
     @extend %btn-shared;
     color: $dark-color;
     background-color: $main-color;
+
+    a {
+      color: #000;
+
+      &:hover {
+        color: $dark-main-color;
+      }
+    }
   }
+
   &-light {
     @extend %btn-shared;
     color: $dark-color;
@@ -70,6 +81,7 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: $light-main-color;
+  color: $dark-main-color;
 }
 
 .lead {
