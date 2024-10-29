@@ -31,6 +31,10 @@
   margin: auto;
 }
 
+.smaller {
+  font-size: 1rem;
+}
+
 .btn-dark, .btn-light, .btn-main {
   display: inline-block;
   font-size: 1.1rem;
@@ -184,6 +188,15 @@ dialog[open] {
   left: 0;
   width: 100%;
   z-index: 1;
+  transform: translateY(0%);
+  transition: transform 1s ease-in-out, background-color 0.5s ease-in-out;
+}
+#main-nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 #main-nav #nav-content {
   display: flex;
@@ -306,23 +319,49 @@ dialog[open] {
   line-height: 1.2;
 }
 
+#courses {
+  display: flex;
+}
+#courses div {
+  display: flex;
+  flex-direction: column;
+  border: #ffd766 1px solid;
+  border-radius: 0.5rem;
+  padding: 2vh 3vw;
+  margin: 2vh;
+}
+#courses div h3 {
+  padding: 0;
+}
+#courses div p.smaller {
+  text-align: center;
+}
+#courses div a {
+  align-self: center;
+}
+
 #contact {
   width: 100%;
   text-align: end;
 }
 
-#cv #cv-btns {
+#cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cv #cv-content #cv-btns {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-#cv #cv-btns .btn-main a {
+#cv #cv-content #cv-btns .btn-main a {
   color: inherit;
 }
 
 #main-footer {
   background: #333;
-  color: set-text-color(#333);
+  color: #fff;
   height: 5rem;
 }
 #main-footer .container {

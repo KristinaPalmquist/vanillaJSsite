@@ -116,6 +116,16 @@ dialog[open] {
   left: 0;
   width: 100%;
   z-index: 1;
+  transform: translateY(0%);
+  transition: transform 1s ease-in-out, background-color 0.5s ease-in-out;
+
+  &.scrolled {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
   #nav-content {
     display: flex;
@@ -259,9 +269,31 @@ dialog[open] {
 
 // }
 
-// // Courses Section
-// #courses {
-// }
+// Courses Section
+#courses {
+  display: flex;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    border: $light-main-color 1px solid;
+    border-radius: 0.5rem;
+    padding: 2vh 3vw;
+    margin: 2vh;
+
+    h3 {
+      padding: 0;
+    }
+
+    p.smaller {
+      text-align: center;
+    }
+
+    a {
+      align-self: center;
+    }
+  }
+}
 
 // // Details / Summary
 // #summary {
@@ -279,36 +311,32 @@ dialog[open] {
 }
 
 #cv {
-  #cv-btns {
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    gap: 2rem;
-    
-    .btn-main {
-      a {
-        color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #cv-content {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    #cv-btns {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      gap: 2rem;
+
+      .btn-main {
+        a {
+          color: inherit;
+        }
       }
     }
   }
 }
 
-// p {
-//   // letter-spacing: 0.1rem;
-//   line-height: 2;
-//   a {
-//     color: $dark-main-color;
-//     &:hover {
-//       color: $main-color;
-//     }
-//   }
-// }
-// }
-
 // Footer
 #main-footer {
   background: $dark-color;
-  color: set-text-color($dark-color);
+  color: #fff;
   height: 5rem;
 
   .container {

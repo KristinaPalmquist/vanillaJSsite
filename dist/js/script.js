@@ -48,11 +48,9 @@ function init() {
 // Sticky menu background
 window.addEventListener('scroll', function () {
   if (this.window.scrollY > 150) {
-    this.document.querySelector('#main-nav').style.backgroundColor =
-      'rgba(0,0,0,.7)';
+    this.document.querySelector('#main-nav').classList.add('scrolled');
   } else {
-    this.document.querySelector('#main-nav').style.backgroundColor =
-      'transparent';
+    this.document.querySelector('#main-nav').classList.remove('scrolled');
   }
 });
 
