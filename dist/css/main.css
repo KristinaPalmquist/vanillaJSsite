@@ -129,11 +129,11 @@ a:hover {
 }
 
 section {
-  min-height: 100vh;
   width: clamp(320px, 90%, 1000px);
   margin: auto;
   display: flex;
   flex-direction: column;
+  margin: 50vh 0;
 }
 
 details {
@@ -319,10 +319,10 @@ dialog[open] {
   line-height: 1.2;
 }
 
-#courses {
+#coursework {
   display: flex;
 }
-#courses div {
+#coursework div {
   display: flex;
   flex-direction: column;
   border: #ffd766 1px solid;
@@ -330,19 +330,20 @@ dialog[open] {
   padding: 2vh 3vw;
   margin: 2vh;
 }
-#courses div h3 {
+#coursework div h3 {
   padding: 0;
 }
-#courses div p.smaller {
+#coursework div p.smaller {
   text-align: center;
 }
-#courses div a {
+#coursework div a {
   align-self: center;
 }
 
 #contact {
   width: 100%;
   text-align: end;
+  margin-bottom: 20vh;
 }
 
 #cv {

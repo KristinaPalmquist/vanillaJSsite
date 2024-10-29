@@ -55,9 +55,9 @@
         <div id="nav-bar">
           <a href="#main-header">Home</a>
           <a href="#about">About</a>
-          <a href="#courses">Courses</a>
-          <a href="#contact">Contact</a>
           <a href="#cv">CV</a>
+          <a href="#coursework">Coursework</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -165,9 +165,44 @@
         </div>
       </section>
 
-      <!-- Courses -->
-      <section id="courses" class="py-1">
-        <h2 class="py-1 section-title">Courses</h2>
+
+      <!-- CV -->
+      <section id="cv" class="py-1">
+        <!-- <div id="contact-cv"> -->
+          <h2 class="py-1 section-title">CV</h2>
+          <div id="cv-content" class="py-1">
+            <p>Download my CV or display on screen</p>
+            <div id="cv-btns" class="py-1">
+            <button class="btn-main">
+              <a href="./pdf/CV_Kristina_Palmquist.pdf" download>Download</a>
+            </button>
+            <dialog id="myDialog" class="dialog">
+              <embed
+                src="./pdf/CV_Kristina_Palmquist.pdf#page=1&zoom=50"
+                width="800px"
+                height="2100px"
+              />
+              <button
+                onclick="document.getElementById('myDialog').close()"
+                class="btn-main"
+              >
+                Close
+              </button>
+            </dialog>
+
+            <button
+              onclick="document.getElementById('myDialog').showModal()"
+              class="btn-main my-2"
+            >
+              Display
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coursework -->
+      <section id="coursework" class="py-1">
+        <h2 class="py-1 section-title">Coursework</h2>
         <p>These are some of the sites I have built as part of my education.</p>
 
         <div>
@@ -238,41 +273,7 @@
         </div>
 </section>
 
-<!-- CV -->
-        <section id="cv" class="py-1">
-        <!-- <div id="contact-cv"> -->
-          <h2 class="py-1 section-title">CV</h2>
-          <div id="cv-content" class="py-1">
-            <p>Download my CV or display on screen</p>
-            <div id="cv-btns" class="py-1">
-            <button class="btn-main">
-              <a href="./pdf/CV_Kristina_Palmquist.pdf" download>Download</a>
-            </button>
-            <dialog id="myDialog" class="dialog">
-              <embed
-                src="./pdf/CV_Kristina_Palmquist.pdf#page=1&zoom=50"
-                width="800px"
-                height="2100px"
-              />
-              <button
-                onclick="document.getElementById('myDialog').close()"
-                class="btn-main"
-              >
-                Close
-              </button>
-            </dialog>
-
-            <button
-              onclick="document.getElementById('myDialog').showModal()"
-              class="btn-main my-2"
-            >
-              Display
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
-
+</div>
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">
       <div class="container">
