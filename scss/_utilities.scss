@@ -35,6 +35,10 @@
   max-width: $website-width;
   padding: 0 1.5rem;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
 }
 
 .smaller {
