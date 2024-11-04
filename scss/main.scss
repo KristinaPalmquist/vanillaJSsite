@@ -160,7 +160,7 @@ dialog[open] {
       padding-top: 1rem;
 
       a {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
         color: #fff;
         padding: 1rem 1.5rem;
@@ -279,10 +279,10 @@ dialog[open] {
     border-radius: 0.5rem;
     padding: 2vh 3vw;
     margin: 2vh 0;
+
     .course-header {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      // justify-content: space-between;
       align-items: center;
 
       h3 {

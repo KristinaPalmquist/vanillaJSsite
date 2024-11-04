@@ -114,7 +114,7 @@ input[class^=btn-]:hover {
 }
 
 #main-nav {
-  width: 100%;
+  max-width: 100vw;
   top: 0;
 }
 #main-nav.scrolled {
@@ -179,15 +179,33 @@ section .switch p {
     align-items: center;
   }
   #main-nav #nav-content #nav-bar a {
+    font-size: 1rem;
     padding: 0.5rem 0.7rem;
   }
   #main-header {
-    top: -21rem;
+    top: -15rem;
     height: 100vh;
   }
   #main-header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 200px 40px 0;
+  }
+  #coursework .course-container {
+    justify-content: center;
+    align-items: center;
+  }
+  #coursework .course-container .course-header {
+    display: flex;
+    flex-direction: column;
+  }
+  #coursework .course-container .course-header h3 {
+    text-align: center;
+  }
+  #coursework .course-container .course-header a {
+    text-align: center;
+  }
+  #coursework .course-container details {
+    width: 100%;
   }
 }
 
