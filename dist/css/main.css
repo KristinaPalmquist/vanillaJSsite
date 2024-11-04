@@ -89,6 +89,24 @@ input[class^=btn-]:hover {
   border-right: #ccc solid 0.15rem;
 }
 
+.under-construction-banner {
+  position: relative;
+}
+.under-construction-banner::before {
+  content: "Under Construction";
+  display: block;
+  position: absolute;
+  top: 1.6rem;
+  left: -50vw;
+  width: 200vw;
+  background-color: rgba(255, 215, 102, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  transform: rotate(5deg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -103,7 +121,7 @@ body {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding: 0.4rem 0;
 }
 
@@ -142,12 +160,13 @@ details {
   border-bottom: #ccc 1px dotted;
 }
 details summary {
-  width: 67%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-content: center;
   font-size: 1.2rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 details summary:after {
   content: "";
@@ -323,22 +342,40 @@ dialog[open] {
 #coursework {
   display: flex;
 }
-#coursework div {
+#coursework .course-container {
   display: flex;
   flex-direction: column;
   border: #ffd766 1px solid;
   border-radius: 0.5rem;
   padding: 2vh 3vw;
-  margin: 2vh;
+  margin: 2vh 0;
 }
-#coursework div h3 {
+#coursework .course-container .course-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+#coursework .course-container .course-header h3 {
+  display: inline;
   padding: 0;
+  text-align: left;
 }
-#coursework div p.smaller {
+#coursework .course-container .course-header p {
   text-align: center;
 }
-#coursework div a {
-  align-self: center;
+#coursework .course-container .course-header a {
+  font-size: 1.2rem;
+  text-align: right;
+}
+#coursework .course-container details {
+  border: none;
+  padding: 8px 0;
+}
+#coursework .course-container summary {
+  text-transform: none;
+}
+#coursework .course-container p.smaller {
+  text-align: center;
 }
 
 #contact {
