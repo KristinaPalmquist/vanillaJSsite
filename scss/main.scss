@@ -221,7 +221,6 @@ dialog[open] {
 #main-header {
   position: relative;
   top: 0;
-  // top: -6rem;
   left: 0;
   width: 100vw;
 
@@ -256,19 +255,8 @@ dialog[open] {
     font-size: 4rem;
     font-weight: 400;
     line-height: 1.2;
-    // padding: auto 1.5rem;
-    //   z-index: 1;
   }
-
-  // .hide {
-  //   visibility: hidden;
-  // }
 }
-
-// // About Section
-// #about {
-
-// }
 
 // Coursework Section
 #coursework {
@@ -317,14 +305,6 @@ dialog[open] {
   }
 }
 
-// // Details / Summary
-// #summary {
-//   .summary {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
-
 // Contact Section
 #contact {
   width: 100%;
@@ -337,13 +317,9 @@ dialog[open] {
   flex-direction: column;
   align-items: center;
   #cv-content {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     #cv-btns {
       display: flex;
       align-items: center;
-      // justify-content: center;
       gap: 2rem;
 
       .btn-main {
@@ -357,13 +333,30 @@ dialog[open] {
 
 // Footer
 #main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: $dark-color;
   color: #fff;
-  height: 5rem;
+  min-height: 5rem;;
+  max-height:  max-content;
+  width: 100vw;
 
   .container {
-    padding-top: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+      text-wrap: nowrap;
+    }
   }
+
+  // .container {
+  //   padding-top: 1rem;
+  // }
 
   // .footer-content {
   //   display: flex;

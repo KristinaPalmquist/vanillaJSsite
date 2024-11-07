@@ -41,14 +41,10 @@
 
 .container {
   width: calc($website-width - 1.5rem);
-  // width: 100%;
-  // max-width: $website-width;
   padding: 0 1.5rem;
-  // margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
 }
 
 .smaller {
@@ -203,22 +199,3 @@ input[class^='btn-']:hover {
 //   }
 // }
 
-// // Backgrounds
-// .bg {
-//   &-main {
-//     background: $main-color;
-//     color: $dark-color;
-//   }
-//   &-light {
-//     background: $light-color;
-//     color: $dark-color;
-//   }
-//   &-dark {
-//     background: $dark-color;
-//     color: $light-color;
-//   }
-//   &-medium {
-//     background: $medium-color;
-//     color: $dark-color;
-//   }
-// }
