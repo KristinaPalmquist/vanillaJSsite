@@ -45,10 +45,6 @@ a {
   }
 }
 
-// img {
-//   width: 100%;
-// }
-
 section {
   width: $website-width;
   flex-direction: column;
@@ -115,6 +111,8 @@ dialog[open] {
   left: 0;
   width: 100%;
   z-index: 1;
+  display: flex;
+  justify-content: center;
   transform: translateY(0%);
   transition: transform 1s ease-in-out, background-color 0.5s ease-in-out;
 
@@ -222,17 +220,21 @@ dialog[open] {
 // Header
 #main-header {
   position: relative;
-  top: -6rem;
+  top: 0;
+  // top: -6rem;
   left: 0;
-  height: 100vh;
+  width: 100vw;
+
+  height: calc(100dvh - 6rem);
 
   #main-image {
     display: block;
     position: absolute;
-    top: 0;
+    top: -6rem;
+    // top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: calc(100vh + 6rem);
     background: $bg-image no-repeat center center / cover;
     z-index: -1;
 
@@ -243,7 +245,7 @@ dialog[open] {
       top: 0;
       left: 0;
       right: 0;
-      height: 100vh;
+      height: calc(100vh + 6rem);
       background-color: rgba(0, 0, 0, 0.4);
     }
   }

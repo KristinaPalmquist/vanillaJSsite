@@ -38,11 +38,19 @@ section {
 }
 .container {
   width: 95vw;
+  margin: auto;
   padding: 0;
 }
 
 #main-header {
-  top: -10rem;
+  #main-image {
+    top: -10rem;
+    height: calc(100vh + 10rem);
+
+    &::before {
+      height: calc(100vh + 10rem);
+    }
+  }
 }
 
 #contact {
@@ -87,11 +95,10 @@ section {
   }
 
   #main-header {
-    top: -15rem;
     height: 100vh;
     h1 {
       font-size: 2rem;
-      margin: 200px 40px 0;
+      margin: 0px 10px 0;
     }
   }
 
