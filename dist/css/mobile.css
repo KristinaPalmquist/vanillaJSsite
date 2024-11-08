@@ -186,9 +186,15 @@ section .switch p {
   #main-header {
     height: 100vh;
   }
-  #main-header h1 {
-    font-size: 2rem;
-    margin: 0px 10px 0;
+  #main-header #main-image {
+    background: url("../img/pexels-pixels-elements-27756786.jpg") no-repeat center center/cover;
+  }
+  #main-header #main-image::before {
+    background-color: rgba(50, 0, 0, 0.4);
+  }
+  #main-header #home {
+    padding-top: 25%;
+    font-size: 3rem;
   }
   #cv #cv-content {
     text-align: center;

@@ -127,7 +127,7 @@ input[class^=btn-]:hover {
 body {
   font-family: "Afacad Flux", sans-serif;
   line-height: 1.6;
-  background-color: #fbfbf3;
+  background-color: #FCFCF5;
   overflow-x: hidden;
   accent-color: #ffbc00;
 }
@@ -350,7 +350,7 @@ dialog[open] {
   padding-top: 35%;
   color: #fff;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
 }
 

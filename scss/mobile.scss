@@ -97,9 +97,15 @@ section {
 
   #main-header {
     height: 100vh;
-    h1 {
-      font-size: 2rem;
-      margin: 0px 10px 0;
+    #main-image {
+      background: $mobile-bg-image no-repeat center center / cover;
+      &::before {
+        background-color: rgba(50, 0, 0, 0.4);
+      }
+    }
+    #home {
+      padding-top: 25%;
+      font-size: 3rem;
     }
   }
 
