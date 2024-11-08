@@ -127,7 +127,7 @@ input[class^=btn-]:hover {
 body {
   font-family: "Afacad Flux", sans-serif;
   line-height: 1.6;
-  background: #fff;
+  background-color: #fbfbf3;
   overflow-x: hidden;
   accent-color: #ffbc00;
 }
@@ -141,7 +141,7 @@ h2,
 h3 {
   display: block;
   padding-bottom: 0.5rem;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -361,6 +361,7 @@ dialog[open] {
   display: flex;
   flex-direction: column;
   border: #ffd766 1px solid;
+  background-color: #fff;
   border-radius: 0.5rem;
   padding: 2vh 3vw;
   margin: 2vh 0;
@@ -402,12 +403,16 @@ dialog[open] {
 #cv {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 #cv #cv-content #cv-btns {
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  justify-content: flex-end;
+  gap: 5vw;
+  margin-left: auto;
+  width: 70%;
+}
+#cv #cv-content #cv-btns .btn-main {
+  margin: 0;
 }
 #cv #cv-content #cv-btns .btn-main a {
   color: inherit;

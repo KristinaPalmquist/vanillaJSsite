@@ -10,7 +10,8 @@
 body {
   font-family: 'Afacad Flux', sans-serif;
   line-height: 1.6;
-  background: #fff;
+  // background: #fff;
+  background-color: $bg-color;
   overflow-x: hidden;
   accent-color: $main-color;
 }
@@ -24,7 +25,7 @@ h2,
 h3 {
   display: block;
   padding-bottom: 0.5rem;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -266,6 +267,7 @@ dialog[open] {
     display: flex;
     flex-direction: column;
     border: $light-main-color 1px solid;
+    background-color: #fff;
     border-radius: 0.5rem;
     padding: 2vh 3vw;
     margin: 2vh 0;
@@ -315,14 +317,21 @@ dialog[open] {
 #cv {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
+
   #cv-content {
+    // justify-content: flex-end;
+
     #cv-btns {
       display: flex;
-      align-items: center;
-      gap: 2rem;
-
+      justify-content: flex-end;
+      // align-items: flex-end;
+      gap: 5vw;;
+      margin-left: auto;
+      width: 70%;
       .btn-main {
+margin: 0;
+
         a {
           color: inherit;
         }
@@ -338,8 +347,8 @@ dialog[open] {
   align-items: center;
   background: $dark-color;
   color: #fff;
-  min-height: 5rem;;
-  max-height:  max-content;
+  min-height: 5rem;
+  max-height: max-content;
   width: 100vw;
 
   .container {
