@@ -365,6 +365,13 @@ input[class^=btn-]:hover {
   .light-theme #coursework .course-container details {
     width: 100%;
   }
+  .light-theme #main-footer .container {
+    row-gap: 0;
+    margin-bottom: 1rem;
+  }
+  .light-theme #main-footer .container p {
+    font-size: 1rem;
+  }
 }
 
 .dark-theme #main-nav {
@@ -509,6 +516,13 @@ input[class^=btn-]:hover {
   }
   .dark-theme #coursework .course-container details {
     width: 100%;
+  }
+  .dark-theme #main-footer .container {
+    row-gap: 0;
+    margin-bottom: 1rem;
+  }
+  .dark-theme #main-footer .container p {
+    font-size: 1rem;
   }
 }
 

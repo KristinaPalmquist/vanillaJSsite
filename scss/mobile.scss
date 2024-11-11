@@ -109,23 +109,18 @@
           align-items: center;
           justify-content: space-evenly;
           width: 100%;
-          // &.container {
           margin: 0;
           a {
             font-size: 1rem;
             padding: 0.5rem 0;
           }
-          // }
         }
         .toggle-container {
           padding-bottom: 0.75rem;
           .toggle {
-            // height: 1rem;
             width: 3.5rem;
             .knob {
-              // height: 1rem;
               width: 1.7rem;
-              // border-radius: 0.5rem;
               &::before {
                 height: 2.4rem;
               }
@@ -134,8 +129,6 @@
               }
             }
             &.active {
-              // background: $linear-gradient-2;
-              // box-shadow: 0 5px 15px $box-shadow-1;
               .knob {
                 transform: translateX(1.75rem);
               }
@@ -195,6 +188,15 @@
         }
         details {
           width: 100%;
+        }
+      }
+    }
+    #main-footer {
+      .container {
+        row-gap: 0;
+        margin-bottom: 1rem;
+        p {
+          font-size: 1rem;
         }
       }
     }
