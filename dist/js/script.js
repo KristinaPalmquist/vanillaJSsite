@@ -76,20 +76,6 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Smooth scrolling on anchor tag click
-$('#main-nav a').on('click', function (event) {
-  if (this.hash !== '') {
-    event.preventDefault();
-    const hash = this.hash;
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - 150,
-      },
-      1000
-    );
-  }
-});
-
 // Style navbar item on click
 document.querySelectorAll('#nav-bar a').forEach((item) => {
   item.addEventListener('click', () => {

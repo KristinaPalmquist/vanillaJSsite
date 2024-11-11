@@ -237,6 +237,9 @@ input[class^=btn-]:hover {
 .light-theme #main-nav #nav-content .logo {
   display: none;
 }
+.light-theme #main-nav #nav-content #nav-bar {
+  justify-content: space-around;
+}
 .light-theme #main-nav #nav-content .toggle-container {
   padding-bottom: 0.75rem;
 }
@@ -387,6 +390,9 @@ input[class^=btn-]:hover {
 }
 .dark-theme #main-nav #nav-content .logo {
   display: none;
+}
+.dark-theme #main-nav #nav-content #nav-bar {
+  justify-content: space-around;
 }
 .dark-theme #main-nav #nav-content .toggle-container {
   padding-bottom: 0.75rem;
