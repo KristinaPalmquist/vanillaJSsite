@@ -235,6 +235,9 @@ input[class^=btn-]:hover {
   align-items: center;
   padding: 0;
 }
+.light-theme #main-nav #nav-content .logo {
+  display: none;
+}
 .light-theme #main-nav #nav-content .toggle-container {
   padding-bottom: 0.75rem;
 }
@@ -289,13 +292,34 @@ input[class^=btn-]:hover {
     font-size: 3rem;
     padding-top: 1rem;
   }
-  .light-theme #main-nav #nav-content #nav-bar {
+  .light-theme #main-nav #nav-content #nav-bar.container {
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
   }
-  .light-theme #main-nav #nav-content #nav-bar a {
+  .light-theme #main-nav #nav-content #nav-bar.container a {
     font-size: 1rem;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0;
+  }
+  .light-theme #main-nav #nav-content .toggle-container {
+    padding-bottom: 0.75rem;
+  }
+  .light-theme #main-nav #nav-content .toggle-container .toggle {
+    width: 3.5rem;
+  }
+  .light-theme #main-nav #nav-content .toggle-container .toggle .knob {
+    width: 1.7rem;
+  }
+  .light-theme #main-nav #nav-content .toggle-container .toggle .knob::before {
+    height: 2.4rem;
+  }
+  .light-theme #main-nav #nav-content .toggle-container .toggle .knob .icon {
+    display: none;
+  }
+  .light-theme #main-nav #nav-content .toggle-container .toggle.active .knob {
+    transform: translateX(1.75rem);
   }
   .light-theme #main-header {
     height: 100vh;
@@ -356,6 +380,9 @@ input[class^=btn-]:hover {
   align-items: center;
   padding: 0;
 }
+.dark-theme #main-nav #nav-content .logo {
+  display: none;
+}
 .dark-theme #main-nav #nav-content .toggle-container {
   padding-bottom: 0.75rem;
 }
@@ -410,13 +437,34 @@ input[class^=btn-]:hover {
     font-size: 3rem;
     padding-top: 1rem;
   }
-  .dark-theme #main-nav #nav-content #nav-bar {
+  .dark-theme #main-nav #nav-content #nav-bar.container {
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
   }
-  .dark-theme #main-nav #nav-content #nav-bar a {
+  .dark-theme #main-nav #nav-content #nav-bar.container a {
     font-size: 1rem;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0;
+  }
+  .dark-theme #main-nav #nav-content .toggle-container {
+    padding-bottom: 0.75rem;
+  }
+  .dark-theme #main-nav #nav-content .toggle-container .toggle {
+    width: 3.5rem;
+  }
+  .dark-theme #main-nav #nav-content .toggle-container .toggle .knob {
+    width: 1.7rem;
+  }
+  .dark-theme #main-nav #nav-content .toggle-container .toggle .knob::before {
+    height: 2.4rem;
+  }
+  .dark-theme #main-nav #nav-content .toggle-container .toggle .knob .icon {
+    display: none;
+  }
+  .dark-theme #main-nav #nav-content .toggle-container .toggle.active .knob {
+    transform: translateX(1.75rem);
   }
   .dark-theme #main-header {
     height: 100vh;

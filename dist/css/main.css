@@ -343,6 +343,12 @@ input[class^=btn-]:hover {
   right: 0;
   width: 100%;
 }
+.light-theme #main-nav.scrolled #nav-content #logo a {
+  color: #000;
+}
+.light-theme #main-nav.scrolled #nav-content #nav-bar a {
+  color: #000;
+}
 .light-theme #main-nav #nav-content {
   display: flex;
   flex-direction: row;
@@ -359,7 +365,7 @@ input[class^=btn-]:hover {
   padding: 0 0;
 }
 .light-theme #main-nav #nav-content #logo a {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
@@ -370,31 +376,31 @@ input[class^=btn-]:hover {
 .light-theme #main-nav #nav-content #nav-bar {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.3rem;
   justify-content: flex-end;
   padding-top: 1rem;
 }
 .light-theme #main-nav #nav-content #nav-bar a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 @keyframes drop {
   0% {
     opacity: 1;
-    color: #000;
+    color: #fff;
   }
   7.5% {
     transform: translateY(20px);
     opacity: 0.5;
-    color: #000;
+    color: #fff;
   }
   15% {
     transform: translateY(40px);
     opacity: 0;
-    color: #000;
+    color: #fff;
   }
   22.5% {
     transform: translateY(-40px);
@@ -424,7 +430,7 @@ input[class^=btn-]:hover {
     color: #ffbc00;
   }
   100% {
-    color: #000;
+    color: #fff;
   }
 }
 .light-theme #main-nav #nav-content #nav-bar a.drop {
@@ -770,16 +776,16 @@ input[class^=btn-]:hover {
 .dark-theme #main-nav #nav-content #nav-bar {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.3rem;
   justify-content: flex-end;
   padding-top: 1rem;
 }
 .dark-theme #main-nav #nav-content #nav-bar a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 @keyframes drop {
   0% {
