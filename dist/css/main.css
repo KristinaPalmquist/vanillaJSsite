@@ -611,7 +611,6 @@ input[class^=btn-]:hover {
   flex-direction: column;
   align-items: center;
   background: #f4f4f4;
-  color: #fff;
   min-height: 5rem;
   max-height: max-content;
   width: 100vw;
@@ -625,6 +624,7 @@ input[class^=btn-]:hover {
 }
 .light-theme #main-footer .container p {
   text-wrap: nowrap;
+  color: #000;
 }
 
 .dark-theme body {
@@ -1011,7 +1011,6 @@ input[class^=btn-]:hover {
   flex-direction: column;
   align-items: center;
   background: #000;
-  color: #555;
   min-height: 5rem;
   max-height: max-content;
   width: 100vw;
@@ -1025,6 +1024,7 @@ input[class^=btn-]:hover {
 }
 .dark-theme #main-footer .container p {
   text-wrap: nowrap;
+  color: #ffbc00;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,14 +1,20 @@
-#what .items .item {
-  display: flex;
-  text-align: left;
-}
+@import 'config';
+@import 'themes';
+@import 'utilities';
 
-#what .items .item i {
-  margin-right: 1.3rem;
-  align-self: center;
-  margin-bottom: 0;
-}
+@include themify($themes) {
+  #what .items .item {
+    display: flex;
+    text-align: left;
+  }
 
-#contact .map {
-  flex: 2;
+  #what .items .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #contact .map {
+    flex: 2;
+  }
 }

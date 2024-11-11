@@ -1,15 +1,250 @@
-#what .items .item {
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.container {
+  width: calc(clamp(320px, 90%, 1000px) - 1.5rem);
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smaller {
+  font-size: 1rem;
+}
+
+.btn-dark, .btn-light, .btn-main {
+  display: inline-block;
+  font-size: 1.1rem;
+  min-width: 10rem;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+.btn-main a {
+  color: #000;
+}
+.btn-main a:hover {
+  color: #b38400;
+}
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #ffd766;
+  color: #b38400;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.type-cursor {
+  border-right: #ccc solid 0.15rem;
+}
+
+.under-construction-banner {
+  position: relative;
+}
+.under-construction-banner::before {
+  content: "Under Construction";
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 120vw;
+  height: 2px;
+  padding: 2rem;
+  margin-top: -1px;
+  line-height: 0px;
+  background-color: rgba(255, 215, 102, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transform-origin: center;
+  transform: translateX(-50%) rotate(-5deg);
+  white-space: nowrap;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.container {
+  width: calc(clamp(320px, 90%, 1000px) - 1.5rem);
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smaller {
+  font-size: 1rem;
+}
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  font-size: 1.1rem;
+  min-width: 10rem;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+.btn-main a {
+  color: #000;
+}
+.btn-main a:hover {
+  color: #b38400;
+}
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #ffd766;
+  color: #b38400;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.type-cursor {
+  border-right: #ccc solid 0.15rem;
+}
+
+.under-construction-banner {
+  position: relative;
+}
+.under-construction-banner::before {
+  content: "Under Construction";
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 120vw;
+  height: 2px;
+  padding: 2rem;
+  margin-top: -1px;
+  line-height: 0px;
+  background-color: rgba(255, 215, 102, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transform-origin: center;
+  transform: translateX(-50%) rotate(-5deg);
+  white-space: nowrap;
+}
+
+.light-theme #what .items .item {
   display: flex;
   text-align: left;
 }
-
-#what .items .item i {
+.light-theme #what .items .item i {
   margin-right: 1.3rem;
   align-self: center;
   margin-bottom: 0;
 }
+.light-theme #contact .map {
+  flex: 2;
+}
 
-#contact .map {
+.dark-theme #what .items .item {
+  display: flex;
+  text-align: left;
+}
+.dark-theme #what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+.dark-theme #contact .map {
   flex: 2;
 }
 

@@ -16,7 +16,8 @@ $themes: (
     arrow: url('../assets/img/arrow_black.png'),
     banner-bg: rgba(255, 215, 102, 0.7),
     banner-text: rgba(0, 0, 0, 0.7),
-    footer: $light-color,
+    footer-bg: $light-color,
+    footer-text: #000,
   ),
   dark: (
     text: #fff,
@@ -32,7 +33,8 @@ $themes: (
     arrow: url('../assets/img/arrow_white.png'),
     banner-bg: rgba(255, 215, 102, 0.7),
     banner-text: rgba(0, 0, 0, 0.7),
-    footer: #000,
+    footer-bg: #000,
+    footer-text: $main-color,
   ),
 );
 
