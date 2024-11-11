@@ -286,6 +286,12 @@ input[class^=btn-]:hover {
   width: 100%;
   text-align: center;
 }
+.light-theme #cv #cv-content p {
+  text-align: center;
+}
+.light-theme #cv #cv-content #cv-btns {
+  margin: auto;
+}
 @media screen and (max-width: 500px) {
   .light-theme #main-nav {
     top: -2px;
@@ -439,6 +445,12 @@ input[class^=btn-]:hover {
 .dark-theme #contact {
   width: 100%;
   text-align: center;
+}
+.dark-theme #cv #cv-content p {
+  text-align: center;
+}
+.dark-theme #cv #cv-content #cv-btns {
+  margin: auto;
 }
 @media screen and (max-width: 500px) {
   .dark-theme #main-nav {

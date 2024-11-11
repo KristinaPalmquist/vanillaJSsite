@@ -263,7 +263,10 @@ input[class^=btn-]:hover {
 .light-theme section {
   width: clamp(320px, 90%, 1000px);
   flex-direction: column;
-  margin: 25vh 0;
+  margin-bottom: 25vh;
+}
+.light-theme section .section-title {
+  margin-top: 25vh;
 }
 .light-theme details {
   padding: 1rem 0;
@@ -669,7 +672,10 @@ input[class^=btn-]:hover {
 .dark-theme section {
   width: clamp(320px, 90%, 1000px);
   flex-direction: column;
-  margin: 25vh 0;
+  margin-bottom: 25vh;
+}
+.dark-theme section .section-title {
+  margin-top: 25vh;
 }
 .dark-theme details {
   padding: 1rem 0;

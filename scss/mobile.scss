@@ -19,8 +19,7 @@
         display: none;
       }
       #nav-bar {
-
-      justify-content: space-around;
+        justify-content: space-around;
       }
       .toggle-container {
         padding-bottom: 0.75rem;
@@ -40,7 +39,6 @@
       }
     }
   }
-
 
   section {
     width: 100%;
@@ -84,19 +82,17 @@
     text-align: center;
   }
 
-  // #cv {
-  //   #cv-btns {
-  //     // flex-direction: column;
-  //     // align-items: center;
-  //     // justify-content: center;
-  //     // gap: 2rem;
-  //     .btn-main {
-  //       a {
-  //         color: inherit;
-  //       }
-  //     }
-  //   }
-  // }
+  #cv {
+    #cv-content {
+      p {
+        text-align: center;
+      }
+
+      #cv-btns {
+        margin: auto;
+      }
+    }
+  }
 
   @media screen and (max-width: 500px) {
     #main-nav {
