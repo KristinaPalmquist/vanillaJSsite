@@ -1,16 +1,43 @@
-// Variables
 $website-width: clamp(320px, 90%, 1000px);
 
-$main-color: #ffbc00;
-$light-main-color: #ffd766;
-$dark-main-color: #b38400;
-$bg-color: #FCFCF5;
-// $bg-color: #fbfbf3;
+$main-font: 'Afacad Flux', sans-serif;
 
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 
-$bg-image: url('../img/pexels-eyad-bayan-257258-787581.jpg');
-$mobile-bg-image: url('../img/pexels-pixels-elements-27756786.jpg');
-$arrow-image: url('../img/arrow.png');
+$bg-image: url('../assets/img/pexels-eyad-bayan-257258-787581.jpg');
+// $bg-image: url('../assets/img/pexels-eyad-bayan-257258-787581.jpg');
+
+$mobile-bg-image: url('../assets/img/pexels-pixels-elements-27756786.jpg');
+
+$main-color: #ffbc00;
+$dark-main-color: #b38400;
+$light-main-color: #ffd766;
+$lightest-main-color: #fcfcf5;
+
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$semi-dark-color: #555;
+$dark-color: #333;
+
+$box-shadow-1: rgba(255, 188, 0, 0.8);
+$box-shadow-2: rgba(255, 215, 102, 0.8);
+$box-shadow-3: rgba(179, 132, 0, 0.3);
+$box-shadow-4: rgba(0, 0, 0, 0.5);
+$linear-gradient-1: linear-gradient(145deg, #ffbc00, #b38400);
+$linear-gradient-2: linear-gradient(145deg, #282211, #40361a);
+$linear-gradient-3: linear-gradient(145deg, #3e3628, #5e533a);
+$linear-gradient-4: linear-gradient(145deg, $light-color, $medium-color);
+
+// Animation
+@mixin animate($animation, $duration, $method, $times) {
+  & {
+    animation: $animation $duration $method $times;
+  }
+}
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}

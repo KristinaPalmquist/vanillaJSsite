@@ -1,3 +1,25 @@
+//Light/Dark Switch
+const toggle = document.querySelector('.toggle');
+const knob = document.querySelector('.knob');
+const icon = document.querySelector('.icon');
+const body = document.body;
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active');
+
+  if (toggle.classList.contains('active')) {
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  } else {
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+  }
+});
+
 // Typing effect
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {

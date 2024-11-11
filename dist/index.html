@@ -23,8 +23,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,18 +47,26 @@
     <title>Promising developer</title>
   </head>
 
-  <body>
-    <div class="overflow-container">
+  <body class="light-theme">
+    <div id="overflow-container">
       <!-- Navbar -->
       <nav id="main-nav">
-        <div class="container" id="nav-content">
+        <div id="nav-content">
           <p id="logo"><a href="#about">KP.</a></p>
-          <div id="nav-bar">
+          <div id="nav-bar" class="container">
             <a href="#main-header">Home</a>
             <a href="#about">About</a>
             <a href="#cv">CV</a>
             <a href="#coursework">Coursework</a>
             <a href="#contact">Contact</a>
+          </div>
+          <!-- Light/Dark toggle -->
+          <div class="toggle-container">
+            <div class="toggle">
+              <div class="knob">
+                <i class="fa fa-sun icon"></i>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -143,7 +151,7 @@
                 provides a clear picture of the potential consequences of
                 different financial decisions, allowing business owners to make
                 more informed choices. My task was to build a new module where
-                users can input salaries and benefit as well as equity stake and
+                users can input salaries and benefits as well as equity stake and
                 calculate the cost for the company.
                 <!-- Supervisor/mentor: <a href="">Per Ledberg</a> -->
               </p>
