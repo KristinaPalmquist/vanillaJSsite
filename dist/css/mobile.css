@@ -224,7 +224,6 @@ input[class^=btn-]:hover {
 
 .light-theme #main-nav {
   max-width: 100vw;
-  top: 0;
 }
 .light-theme #main-nav.scrolled {
   transform: translateY(-50%);
@@ -274,7 +273,7 @@ input[class^=btn-]:hover {
   padding: 0;
 }
 .light-theme #main-header #main-image {
-  top: -10rem;
+  top: -11.1rem;
   height: calc(100vh + 10rem);
 }
 .light-theme #main-header #main-image::before {
@@ -376,7 +375,6 @@ input[class^=btn-]:hover {
 
 .dark-theme #main-nav {
   max-width: 100vw;
-  top: 0;
 }
 .dark-theme #main-nav.scrolled {
   transform: translateY(-50%);
@@ -426,7 +424,7 @@ input[class^=btn-]:hover {
   padding: 0;
 }
 .dark-theme #main-header #main-image {
-  top: -10rem;
+  top: -11.1rem;
   height: calc(100vh + 10rem);
 }
 .dark-theme #main-header #main-image::before {
