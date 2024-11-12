@@ -10,13 +10,13 @@ toggle.addEventListener('click', () => {
   if (toggle.classList.contains('active')) {
     body.classList.remove('light-theme');
     body.classList.add('dark-theme');
-    icon.classList.remove('fa-sun');
-    icon.classList.add('fa-moon');
+    // icon.classList.remove('fa-sun');
+    // icon.classList.add('fa-moon');
   } else {
     body.classList.remove('dark-theme');
     body.classList.add('light-theme');
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
+    // icon.classList.remove('fa-moon');
+    // icon.classList.add('fa-sun');
   }
 });
 

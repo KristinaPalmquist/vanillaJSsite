@@ -372,11 +372,12 @@
         right: 0;
         height: calc(100vh + 6rem);
         background-color: themed('hero-overlay');
+        backdrop-filter: blur(5px);
       }
     }
 
     #home {
-      padding-top: 35%;
+      margin-top: 35%;
       color: #fff;
       font-size: 4rem;
       font-weight: 300;
