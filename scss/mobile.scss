@@ -3,6 +3,9 @@
 @import 'utilities';
 
 @include themify($themes) {
+  p {
+    font-size: 1.3rem;
+  }
   #main-nav {
     max-width: 100vw;
 

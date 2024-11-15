@@ -222,6 +222,9 @@ input[class^=btn-]:hover {
   white-space: nowrap;
 }
 
+.light-theme p {
+  font-size: 1.3rem;
+}
 .light-theme #main-nav {
   max-width: 100vw;
 }
@@ -383,6 +386,9 @@ input[class^=btn-]:hover {
   }
 }
 
+.dark-theme p {
+  font-size: 1.3rem;
+}
 .dark-theme #main-nav {
   max-width: 100vw;
 }
