@@ -378,8 +378,10 @@
     }
 
     #title {
+      align-self: flex-start;
       margin-top: 35%;
-      color: #fff;
+      // text-align: left;
+      color: themed('text');
       font-size: 4rem;
       font-weight: 300;
       line-height: 1.2;
