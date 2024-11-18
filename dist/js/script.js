@@ -1,101 +1,103 @@
-const TypeWriter = function (txtElement, words, wait = 3000) {
-  this.txtElement = txtElement;
-  this.words = words;
-  this.txt = '';
-  this.wordIndex = 0;
-  this.wait = parseInt(wait, 10);
-  this.type();
-  this.isDeleting = false;
-};
+// const TypeWriter = function (txtElement, words, wait = 3000) {
+//   this.txtElement = txtElement;
+//   this.words = words;
+//   this.txt = '';
+//   this.wordIndex = 0;
+//   this.wait = parseInt(wait, 10);
+//   this.type();
+//   this.isDeleting = false;
+// };
 
-// Type Method
-TypeWriter.prototype.type = function () {
-  // Current index of word
-  const current = this.wordIndex % this.words.length;
-  // Get full text och current word
-  const fullTxt = this.words[current];
-  // Check if deleting
-  if (this.isDeleting) {
-    // Remove char
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    // Add char
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+// // Type Method
+// TypeWriter.prototype.type = function () {
+//   // Current index of word
+//   const current = this.wordIndex % this.words.length;
+//   // Get full text och current word
+//   const fullTxt = this.words[current];
+//   // Check if deleting
+//   if (this.isDeleting) {
+//     // Remove char
+//     this.txt = fullTxt.substring(0, this.txt.length - 1);
+//   } else {
+//     // Add char
+//     this.txt = fullTxt.substring(0, this.txt.length + 1);
+//   }
 
-  // Insert txt into Element
-  this.txtElement.innerHTML = `<span class='txt'>${this.txt}</span`;
+//   // Insert txt into Element
+//   this.txtElement.innerHTML = `<span class='txt'>${this.txt}</span`;
 
-  // Initial Type Speed
-  let typeSpeed = 300;
-  if (this.isDeleting) {
-    typeSpeed /= 2;
-  }
+//   // Initial Type Speed
+//   let typeSpeed = 300;
+//   if (this.isDeleting) {
+//     typeSpeed /= 2;
+//   }
 
-  // Check if word is complete
-  if (!this.isDeleting && this.txt === fullTxt) {
-    // Make paus at end
-    typeSpeed = this.wait;
-    // Set delete to true
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    // Move to next word
-    this.wordIndex++;
-    // Pause before start typing
-    typeSpeed = 500;
-  }
-
-  setTimeout(() => this.type(), typeSpeed);
-};
-
-// // Typing effect as class
-// class TypeWriter {
-//   constructor(textElement, words, wait = 3000) {
-//     this.textElement = textElement;
-//     this.words = words;
-//     this.txt = '';
-//     this.wordIndex = 0;
-//     this.wait = parseInt(wait, 10);
-//     this.type();
+//   // Check if word is complete
+//   if (!this.isDeleting && this.txt === fullTxt) {
+//     // Make paus at end
+//     typeSpeed = this.wait;
+//     // Set delete to true
+//     this.isDeleting = true;
+//   } else if (this.isDeleting && this.txt === '') {
 //     this.isDeleting = false;
+//     // Move to next word
+//     this.wordIndex++;
+//     // Pause before start typing
+//     typeSpeed = 500;
 //   }
-//   type() {
-//     console.log('type');
-//     const currentIndex = this.wordIndex % this.words.length;
-//     console.log(currentIndex);
-//     const fullText = this.words[currentIndex];
-//     console.log(fullText);
-//     console.log(this.isDeleting);
-//     // Remove char when deleting, add char if not
-//     if (this.isDeleting) {
-//       this.text = fullText.substring(0, this.text.length - 1);
-//     } else {
-//       this.text = fullText.substring(0, this.text.length + 1);
-//     }
-//     this.textElement.innerHTML = `<span class='text'>${this.text}</span`;
-//     let typeSpeed = 300;
-//     // increase speed when deleting
-//     if (this.isDeleting) {
-//       typeSpeed /= 3;
-//     }
-//     // if word is complete, wait and then set deleting to true
-//     if (!this.isDeleting && this.text === fullText) {
-//       typeSpeed = this.wait;
-//       this.isDeleting = true;
-//       // if deletion is done, set deleting to false and switch to next word + decrease speed
-//     } else if (this.isDeleting && this.text === '') {
-//       this.isDeleting = false;
-//       this.wordIndex++;
-//       typeSpeed = 500;
-//     }
-//     // start over after going through all words
-//     if (this.wordIndex === this.words.length) {
-//       this.wordIndex = 0;
-//     }
-//     setTimeout(() => this.type(), typeSpeed);
-//   }
-// }
+
+//   setTimeout(() => this.type(), typeSpeed);
+// };
+
+// Typing effect as class
+class TypeWriter {
+  constructor(textElement, words, wait = 3000) {
+    this.textElement = textElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
+  type() {
+    console.log('type');
+    const currentIndex = this.wordIndex % this.words.length;
+    console.log(currentIndex);
+    const fullText = this.words[currentIndex];
+    console.log(fullText);
+    console.log(this.isDeleting);
+    // Remove char when deleting, add char if not
+    if (this.isDeleting) {
+      this.text = fullText.substring(0, this.text.length - 1);
+    } else {
+      this.text = fullText.substring(0, this.text.length + 1);
+    }
+    this.textElement.innerHTML = `<span class='text'>${this.text}</span`;
+    let typeSpeed = 300;
+    // increase speed when deleting
+    if (this.isDeleting) {
+      typeSpeed /= 3;
+    }
+    // if word is complete, wait and then set deleting to true
+    if (!this.isDeleting && this.text === fullText) {
+      typeSpeed = this.wait;
+      this.isDeleting = true;
+      // if deletion is done, set deleting to false and switch to next word + decrease speed
+    } else if (this.isDeleting && this.text === '') {
+      this.isDeleting = false;
+      this.wordIndex++;
+      typeSpeed = 500;
+    }
+    // start over after going through all words
+    if (this.wordIndex === this.words.length) {
+      this.wordIndex = 0;
+    }
+    setTimeout(() => this.type(), typeSpeed);
+
+    document.removeEventListener('DOMContentLoaded', init)
+  }
+}
 
 document.addEventListener('DOMContentLoaded', init);
 function init() {
@@ -180,7 +182,7 @@ toggle.addEventListener('click', () => {
   }
 });
 
-// Sticky menu background
+// Menu changes on scroll
 window.addEventListener('scroll', function () {
   if (this.window.scrollY > 150) {
     this.document.querySelector('#main-nav').classList.add('scrolled');

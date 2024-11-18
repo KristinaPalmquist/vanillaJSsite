@@ -83,7 +83,7 @@ input[class^=btn-]:hover {
   text-align: center;
 }
 
-.type-cursor {
+.text-cursor {
   border-right: #ccc solid 0.15rem;
 }
 
@@ -195,7 +195,7 @@ input[class^=btn-]:hover {
   text-align: center;
 }
 
-.type-cursor {
+.text-cursor {
   border-right: #ccc solid 0.15rem;
 }
 
@@ -329,7 +329,7 @@ input[class^=btn-]:hover {
   z-index: -1;
 }
 .light-theme #main-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -739,7 +739,7 @@ input[class^=btn-]:hover {
   z-index: -1;
 }
 .dark-theme #main-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
