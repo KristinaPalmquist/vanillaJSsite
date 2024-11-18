@@ -1,4 +1,4 @@
-// Typing effect as class
+// Typing effect class
 class TypeWriter {
   constructor(textElement, words, wait = 3000) {
     this.textElement = textElement;
