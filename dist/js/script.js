@@ -9,6 +9,7 @@ class TypeWriter {
     this.type();
     this.isDeleting = false;
   }
+
   type() {
     const currentIndex = this.wordIndex % this.words.length;
     const fullText = this.words[currentIndex];
@@ -41,7 +42,9 @@ class TypeWriter {
     setTimeout(() => this.type(), typeSpeed);
   }
 }
-document.addEventListener('DOMContentLoaded', init);
+
+window.addEventListener('load', init);
+// document.addEventListener('DOMContentLoaded', init);
 function init() {
   const textElement = document.querySelector('.text-type');
   const words = JSON.parse(textElement.getAttribute('data-words'));
