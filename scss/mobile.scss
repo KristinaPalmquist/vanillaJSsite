@@ -78,6 +78,13 @@
         height: calc(100vh + 10rem);
       }
     }
+    .container {
+      #contact-div {
+        button {
+          margin: 1rem auto;
+        }
+      }
+    }
   }
 
   #contact {

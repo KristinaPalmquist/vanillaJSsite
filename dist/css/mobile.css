@@ -277,6 +277,9 @@ input[class^=btn-]:hover {
 .light-theme #main-header #main-image::before {
   height: calc(100vh + 10rem);
 }
+.light-theme #main-header .container #contact-div button {
+  margin: 1rem auto;
+}
 .light-theme #contact {
   width: 100%;
   text-align: center;
@@ -450,6 +453,9 @@ input[class^=btn-]:hover {
 }
 .dark-theme #main-header #main-image::before {
   height: calc(100vh + 10rem);
+}
+.dark-theme #main-header .container #contact-div button {
+  margin: 1rem auto;
 }
 .dark-theme #contact {
   width: 100%;
