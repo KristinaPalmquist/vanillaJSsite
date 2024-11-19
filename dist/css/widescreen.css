@@ -214,4 +214,18 @@ input[class^=btn-]:hover {
   white-space: nowrap;
 }
 
+.light-theme #nav-content #logo {
+  margin-left: 3%;
+}
+.light-theme #nav-content .toggle-container {
+  margin-right: 3%;
+}
+
+.dark-theme #nav-content #logo {
+  margin-left: 3%;
+}
+.dark-theme #nav-content .toggle-container {
+  margin-right: 3%;
+}
+
 /*# sourceMappingURL=widescreen.css.map */

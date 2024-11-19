@@ -374,6 +374,7 @@ input[class^=btn-]:hover {
   }
   .light-theme #coursework .course-container .course-header a {
     text-align: center;
+    margin-right: auto;
   }
   .light-theme #coursework .course-container details {
     width: 100%;
@@ -547,6 +548,7 @@ input[class^=btn-]:hover {
   }
   .dark-theme #coursework .course-container .course-header a {
     text-align: center;
+    margin-right: auto;
   }
   .dark-theme #coursework .course-container details {
     width: 100%;

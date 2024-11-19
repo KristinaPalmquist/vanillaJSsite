@@ -247,6 +247,7 @@ input[class^=btn-]:hover {
 }
 .light-theme a {
   text-decoration: none;
+  color: #b38400;
 }
 .light-theme a:hover {
   color: #ffbc00;
@@ -606,11 +607,8 @@ input[class^=btn-]:hover {
 }
 .light-theme #contact {
   width: 100%;
-  text-align: end;
+  text-align: center;
   margin-bottom: 20vh;
-}
-.light-theme #contact a {
-  color: #b38400;
 }
 .light-theme #contact a:hover {
   color: #ffd766;
@@ -634,6 +632,9 @@ input[class^=btn-]:hover {
 }
 .light-theme #contact .social a:hover .fab {
   color: rgba(0, 0, 0, 0.7);
+}
+.light-theme #contact .social a:active {
+  background: #ffbc00;
 }
 .light-theme #contact .social a .fab {
   font-size: 1.7rem;
@@ -704,6 +705,7 @@ input[class^=btn-]:hover {
 }
 .dark-theme a {
   text-decoration: none;
+  color: #ffbc00;
 }
 .dark-theme a:hover {
   color: #ffd766;
@@ -1063,11 +1065,8 @@ input[class^=btn-]:hover {
 }
 .dark-theme #contact {
   width: 100%;
-  text-align: end;
+  text-align: center;
   margin-bottom: 20vh;
-}
-.dark-theme #contact a {
-  color: #ffbc00;
 }
 .dark-theme #contact a:hover {
   color: #ffbc00;
@@ -1091,6 +1090,9 @@ input[class^=btn-]:hover {
 }
 .dark-theme #contact .social a:hover .fab {
   color: rgba(255, 255, 255, 0.7);
+}
+.dark-theme #contact .social a:active {
+  background: #ffd766;
 }
 .dark-theme #contact .social a .fab {
   font-size: 1.7rem;

@@ -41,7 +41,7 @@
 
   a {
     text-decoration: none;
-    // color: themed('link');
+    color: themed('link');
 
     &:hover {
       color: themed('accent');
@@ -460,10 +460,10 @@
   // Contact Section
   #contact {
     width: 100%;
-    text-align: end;
+    text-align: center;
     margin-bottom: 20vh;
     a {
-      color: themed('link');
+      // color: themed('link');
       &:hover {
         color: themed('hover');
       }
@@ -485,6 +485,9 @@
           .fab {
             color: themed('see-through-text');
           }
+        }
+        &:active {
+          background: themed('accent');
         }
 
         .fab {
