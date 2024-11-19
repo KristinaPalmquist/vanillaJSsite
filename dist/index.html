@@ -76,16 +76,21 @@
         <div id="main-image"></div>
 
         <div class="container">
-          <h1 id="title">
-            Kristina Palmquist -
-            <span
-              class="text-type"
-              data-wait="3000"
-              data-words='["Web Developer",
+          <div id="title-div">
+            <h1 id="title">
+              Kristina Palmquist -
+              <span
+                class="text-type text-cursor"
+                data-wait="3000"
+                data-words='["Web Developer",
             "JavaScript Dev", "Frontend Dev", "Business Economist"]'
-            >
-            </span>
-          </h1 class="text-cursor">
+              >
+              </span>
+            </h1>
+          </div>
+          <div id="contact-div">
+            <button class="btn-main">Contact Details</button>
+          </div>
         </div>
       </header>
 
@@ -262,9 +267,13 @@
             <div class="course-header">
               <h3>HTML / CSS</h3>
               <p>IT-Högskolan, 2022</p>
-              <a href="https://htmlcss-kafehjartat.netlify.app" target="_blank">
-                Visit Site
-              </a>
+                <a
+                  href="https://htmlcss-kafehjartat.netlify.app"
+                  target="_blank"
+                  class="btn-light-dark"
+                >
+                  Visit Site
+                </a>
             </div>
             <details>
               <summary>Read more</summary>
@@ -282,6 +291,7 @@
               <a
                 href="https://native-javascript-labb2.netlify.app/"
                 target="_blank"
+                class="btn-light-dark"
               >
                 Visit Site
               </a>
@@ -306,6 +316,7 @@
               <a
                 href="https://webbteknik1-garnstickor.netlify.app"
                 target="_blank"
+                class="btn-light-dark"
               >
                 Visit Site
               </a>
@@ -328,9 +339,10 @@
             <div class="course-header">
               <h3>Agile / Vue.js</h3>
               <p>IT-Högskolan, 2023</p>
-              <a href="https://agile-cinemap.netlify.app" target="_blank">
+              <!-- <a href="https://agile-cinemap.netlify.app" target="_blank"
+              class="btn-light-dark">
                 Visit Site
-              </a>
+              </a> -->
             </div>
 
             <details>
@@ -347,13 +359,57 @@
             <div class="course-header">
               <h3>Backend / Database</h3>
               <p>IT-Högskolan, 2023</p>
-              <a href="https://agile-cinemap.netlify.app" target="_blank">
+              <!-- <a href="https://agile-cinemap.netlify.app" target="_blank"
+                class="btn-light-dark">
                 Visit Site
-              </a>
+              </a> -->
             </div>
             <details>
               <summary>Read More</summary>
               <p class="smaller">Description goes here</p>
+            </details>
+          </div>
+
+          <div class="course-container under-construction-banner">
+            <div class="course-header">
+              <h3>Java</h3>
+              <p>Luleå Tekniska Högskola, 2023/2024</p>
+             
+              <!-- <a href="#" target="_blank" class="btn-light-dark">
+                Visit Site
+              </a> -->
+            </div>
+            <details>
+              <summary>Read more</summary>
+              <p class="smaller">Lorem ipsum dolor sit amet.</p>
+            </details>
+          </div>
+
+          <div class="course-container under-construction-banner">
+            <div class="course-header">
+              <h3>Flutter</h3>
+              <p>Linnéuniversitetet, 2023</p>
+              <!-- <a href="#" target="_blank" class="btn-light-dark">
+                Visit Site
+              </a> -->
+            </div>
+            <details>
+              <summary>Read more</summary>
+              <p class="smaller">Lorem ipsum dolor sit amet.</p>
+            </details>
+          </div>
+
+          <div class="course-container under-construction-banner">
+            <div class="course-header">
+              <h3>React Native</h3>
+              <p>IT-Högskolan, 2023</p>
+              <!-- <a href="#" target="_blank" class="btn-light-dark">
+                Visit Site
+              </a> -->
+            </div>
+            <details>
+              <summary>Read more</summary>
+              <p class="smaller">Lorem ipsum dolor sit amet.</p>
             </details>
           </div>
 

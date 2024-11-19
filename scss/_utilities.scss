@@ -70,15 +70,11 @@
     }
   }
 
-  &-light {
+  &-light-dark {
     @extend %btn-shared;
-    color: $dark-color;
-    background-color: $light-color;
-  }
-  &-dark {
-    @extend %btn-shared;
-    color: $light-color;
-    background-color: $dark-color;
+    color: themed('btn-text');
+    background-color: themed('btn-bg');
+    min-width: 1rem;
   }
 }
 

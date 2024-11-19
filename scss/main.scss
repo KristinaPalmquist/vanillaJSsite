@@ -41,7 +41,7 @@
 
   a {
     text-decoration: none;
-    color: themed('link');
+    // color: themed('link');
 
     &:hover {
       color: themed('accent');
@@ -137,7 +137,6 @@
     justify-content: center;
     transform: translateY(0%);
     transition: transform 1s ease-in-out, background-color 0.5s ease-in-out;
-    // padding: 0 1rem;
 
     &.scrolled {
       background-color: themed('nav');
@@ -377,14 +376,26 @@
       }
     }
 
-    #title {
-      align-self: flex-start;
-      margin-top: 35%;
-      // text-align: left;
-      color: themed('text');
-      font-size: 4rem;
-      font-weight: 300;
-      line-height: 1.2;
+    .container {
+      display: grid;
+
+      #title-div {
+        margin-top: 35%;
+        align-content: flex-start;
+
+        #title {
+          color: themed('text');
+          font-size: 4rem;
+          font-weight: 300;
+          line-height: 1.2;
+        }
+      }
+
+      #contact-div {
+        margin-top: 3rem;
+
+        align-content: flex-end;
+      }
     }
   }
 
@@ -403,7 +414,7 @@
 
       .course-header {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 3fr 2fr;
         align-items: center;
 
         h3 {
@@ -417,8 +428,7 @@
         }
 
         a {
-          font-size: 1.2rem;
-          text-align: right;
+          margin-right: 0;
         }
       }
       details {

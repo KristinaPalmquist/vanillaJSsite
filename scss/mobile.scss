@@ -147,12 +147,12 @@
     #main-header {
       height: 100vh;
       #main-image {
-        background: $mobile-bg-image no-repeat center center / cover;
+        background: themed('mobile-bg-image') no-repeat center center / cover;
         &::before {
-          background-color: rgba(50, 0, 0, 0.4);
+          background-color: themed('mobile-overlay');
         }
       }
-      #home {
+      #title {
         padding-top: 25%;
         font-size: 3rem;
       }

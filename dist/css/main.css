@@ -36,7 +36,7 @@
   font-size: 1rem;
 }
 
-.btn-dark, .btn-light, .btn-main {
+.btn-light-dark, .btn-main {
   display: inline-block;
   font-size: 1.1rem;
   min-width: 10rem;
@@ -58,13 +58,10 @@
 .btn-main a:hover {
   color: #b38400;
 }
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
+.btn-light-dark {
+  color: themed("btn-text");
+  background-color: themed("btn-bg");
+  min-width: 1rem;
 }
 
 button[class^=btn-]:hover,
@@ -148,7 +145,7 @@ input[class^=btn-]:hover {
   font-size: 1rem;
 }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main, .btn-light-dark {
   display: inline-block;
   font-size: 1.1rem;
   min-width: 10rem;
@@ -170,13 +167,8 @@ input[class^=btn-]:hover {
 .btn-main a:hover {
   color: #b38400;
 }
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
+.btn-light-dark {
+  min-width: 1rem;
 }
 
 button[class^=btn-]:hover,
@@ -255,7 +247,6 @@ input[class^=btn-]:hover {
 }
 .light-theme a {
   text-decoration: none;
-  color: #b38400;
 }
 .light-theme a:hover {
   color: #ffbc00;
@@ -549,13 +540,22 @@ input[class^=btn-]:hover {
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(5px);
 }
-.light-theme #main-header #title {
-  align-self: flex-start;
+.light-theme #main-header .container {
+  display: grid;
+}
+.light-theme #main-header .container #title-div {
   margin-top: 35%;
+  align-content: flex-start;
+}
+.light-theme #main-header .container #title-div #title {
   color: #000;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
+}
+.light-theme #main-header .container #contact-div {
+  margin-top: 3rem;
+  align-content: flex-end;
 }
 .light-theme #coursework {
   display: flex;
@@ -571,7 +571,7 @@ input[class^=btn-]:hover {
 }
 .light-theme #coursework .course-container .course-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   align-items: center;
 }
 .light-theme #coursework .course-container .course-header h3 {
@@ -583,8 +583,7 @@ input[class^=btn-]:hover {
   text-align: center;
 }
 .light-theme #coursework .course-container .course-header a {
-  font-size: 1.2rem;
-  text-align: right;
+  margin-right: 0;
 }
 .light-theme #coursework .course-container details {
   border: none;
@@ -666,7 +665,6 @@ input[class^=btn-]:hover {
 }
 .dark-theme a {
   text-decoration: none;
-  color: #ffbc00;
 }
 .dark-theme a:hover {
   color: #ffd766;
@@ -960,13 +958,22 @@ input[class^=btn-]:hover {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
 }
-.dark-theme #main-header #title {
-  align-self: flex-start;
+.dark-theme #main-header .container {
+  display: grid;
+}
+.dark-theme #main-header .container #title-div {
   margin-top: 35%;
+  align-content: flex-start;
+}
+.dark-theme #main-header .container #title-div #title {
   color: #fff;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
+}
+.dark-theme #main-header .container #contact-div {
+  margin-top: 3rem;
+  align-content: flex-end;
 }
 .dark-theme #coursework {
   display: flex;
@@ -982,7 +989,7 @@ input[class^=btn-]:hover {
 }
 .dark-theme #coursework .course-container .course-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   align-items: center;
 }
 .dark-theme #coursework .course-container .course-header h3 {
@@ -994,8 +1001,7 @@ input[class^=btn-]:hover {
   text-align: center;
 }
 .dark-theme #coursework .course-container .course-header a {
-  font-size: 1.2rem;
-  text-align: right;
+  margin-right: 0;
 }
 .dark-theme #coursework .course-container details {
   border: none;

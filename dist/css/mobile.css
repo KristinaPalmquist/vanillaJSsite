@@ -36,7 +36,7 @@
   font-size: 1rem;
 }
 
-.btn-dark, .btn-light, .btn-main {
+.btn-light-dark, .btn-main {
   display: inline-block;
   font-size: 1.1rem;
   min-width: 10rem;
@@ -58,13 +58,10 @@
 .btn-main a:hover {
   color: #b38400;
 }
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
+.btn-light-dark {
+  color: themed("btn-text");
+  background-color: themed("btn-bg");
+  min-width: 1rem;
 }
 
 button[class^=btn-]:hover,
@@ -148,7 +145,7 @@ input[class^=btn-]:hover {
   font-size: 1rem;
 }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main, .btn-light-dark {
   display: inline-block;
   font-size: 1.1rem;
   min-width: 10rem;
@@ -170,13 +167,8 @@ input[class^=btn-]:hover {
 .btn-main a:hover {
   color: #b38400;
 }
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
+.btn-light-dark {
+  min-width: 1rem;
 }
 
 button[class^=btn-]:hover,
@@ -339,12 +331,12 @@ input[class^=btn-]:hover {
     height: 100vh;
   }
   .light-theme #main-header #main-image {
-    background: url("../assets/img/pexels-pixels-elements-27756786.jpg") no-repeat center center/cover;
+    background: url("../assets/img/pexels-nadine-wuchenauer-695910-1536302.jpg") no-repeat center center/cover;
   }
   .light-theme #main-header #main-image::before {
-    background-color: rgba(50, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
   }
-  .light-theme #main-header #home {
+  .light-theme #main-header #title {
     padding-top: 25%;
     font-size: 3rem;
   }
@@ -508,7 +500,7 @@ input[class^=btn-]:hover {
   .dark-theme #main-header #main-image::before {
     background-color: rgba(50, 0, 0, 0.4);
   }
-  .dark-theme #main-header #home {
+  .dark-theme #main-header #title {
     padding-top: 25%;
     font-size: 3rem;
   }

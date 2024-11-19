@@ -36,7 +36,7 @@
   font-size: 1rem;
 }
 
-.btn-dark, .btn-light, .btn-main {
+.btn-light-dark, .btn-main {
   display: inline-block;
   font-size: 1.1rem;
   min-width: 10rem;
@@ -58,13 +58,10 @@
 .btn-main a:hover {
   color: #b38400;
 }
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
+.btn-light-dark {
+  color: themed("btn-text");
+  background-color: themed("btn-bg");
+  min-width: 1rem;
 }
 
 button[class^=btn-]:hover,
@@ -148,7 +145,7 @@ input[class^=btn-]:hover {
   font-size: 1rem;
 }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main, .btn-light-dark {
   display: inline-block;
   font-size: 1.1rem;
   min-width: 10rem;
@@ -170,13 +167,8 @@ input[class^=btn-]:hover {
 .btn-main a:hover {
   color: #b38400;
 }
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
+.btn-light-dark {
+  min-width: 1rem;
 }
 
 button[class^=btn-]:hover,
@@ -220,32 +212,6 @@ input[class^=btn-]:hover {
   transform-origin: center;
   transform: translateX(-50%) rotate(-5deg);
   white-space: nowrap;
-}
-
-.light-theme #what .items .item {
-  display: flex;
-  text-align: left;
-}
-.light-theme #what .items .item i {
-  margin-right: 1.3rem;
-  align-self: center;
-  margin-bottom: 0;
-}
-.light-theme #contact .map {
-  flex: 2;
-}
-
-.dark-theme #what .items .item {
-  display: flex;
-  text-align: left;
-}
-.dark-theme #what .items .item i {
-  margin-right: 1.3rem;
-  align-self: center;
-  margin-bottom: 0;
-}
-.dark-theme #contact .map {
-  flex: 2;
 }
 
 /*# sourceMappingURL=widescreen.css.map */
