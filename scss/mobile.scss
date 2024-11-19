@@ -78,6 +78,8 @@
         height: calc(100vh + 10rem);
       }
     }
+    
+
   }
 
   #contact {
@@ -152,10 +154,22 @@
           background-color: themed('mobile-overlay');
         }
       }
-      #title {
-        padding-top: 25%;
-        font-size: 3rem;
+      .container {
+        #title-div {
+          margin-top: 0;
+          #title {
+            padding-top: 0;
+            font-size: 3rem;
+          }
+        }
+        #contact-div {
+          top: 60%;
+          button {
+            align-self: center;
+          }
+        }
       }
+    
     }
 
     #cv {

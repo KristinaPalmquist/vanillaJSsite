@@ -336,9 +336,18 @@ input[class^=btn-]:hover {
   .light-theme #main-header #main-image::before {
     background-color: rgba(255, 255, 255, 0.4);
   }
-  .light-theme #main-header #title {
-    padding-top: 25%;
+  .light-theme #main-header .container #title-div {
+    margin-top: 0;
+  }
+  .light-theme #main-header .container #title-div #title {
+    padding-top: 0;
     font-size: 3rem;
+  }
+  .light-theme #main-header .container #contact-div {
+    top: 60%;
+  }
+  .light-theme #main-header .container #contact-div button {
+    align-self: center;
   }
   .light-theme #cv #cv-content {
     text-align: center;
@@ -500,9 +509,18 @@ input[class^=btn-]:hover {
   .dark-theme #main-header #main-image::before {
     background-color: rgba(50, 0, 0, 0.4);
   }
-  .dark-theme #main-header #title {
-    padding-top: 25%;
+  .dark-theme #main-header .container #title-div {
+    margin-top: 0;
+  }
+  .dark-theme #main-header .container #title-div #title {
+    padding-top: 0;
     font-size: 3rem;
+  }
+  .dark-theme #main-header .container #contact-div {
+    top: 60%;
+  }
+  .dark-theme #main-header .container #contact-div button {
+    align-self: center;
   }
   .dark-theme #cv #cv-content {
     text-align: center;

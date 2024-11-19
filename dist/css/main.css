@@ -542,9 +542,12 @@ input[class^=btn-]:hover {
 }
 .light-theme #main-header .container {
   display: grid;
+  height: 100%;
 }
 .light-theme #main-header .container #title-div {
-  margin-top: 35%;
+  position: absolute;
+  top: 30%;
+  margin-top: 10%;
   align-content: flex-start;
 }
 .light-theme #main-header .container #title-div #title {
@@ -554,8 +557,14 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 .light-theme #main-header .container #contact-div {
-  margin-top: 3rem;
-  align-content: flex-end;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  display: flex;
+}
+.light-theme #main-header .container #contact-div button {
+  margin-right: 3rem;
+  align-self: flex-end;
 }
 .light-theme #coursework {
   display: flex;
@@ -599,6 +608,36 @@ input[class^=btn-]:hover {
   width: 100%;
   text-align: end;
   margin-bottom: 20vh;
+}
+.light-theme #contact a {
+  color: #b38400;
+}
+.light-theme #contact a:hover {
+  color: #ffd766;
+}
+.light-theme #contact .social {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.light-theme #contact .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.light-theme #contact .social a:hover {
+  background: #ffd766;
+}
+.light-theme #contact .social a:hover .fab {
+  color: rgba(0, 0, 0, 0.7);
+}
+.light-theme #contact .social a .fab {
+  font-size: 1.7rem;
+  color: #000;
 }
 .light-theme #cv {
   display: flex;
@@ -960,9 +999,12 @@ input[class^=btn-]:hover {
 }
 .dark-theme #main-header .container {
   display: grid;
+  height: 100%;
 }
 .dark-theme #main-header .container #title-div {
-  margin-top: 35%;
+  position: absolute;
+  top: 30%;
+  margin-top: 10%;
   align-content: flex-start;
 }
 .dark-theme #main-header .container #title-div #title {
@@ -972,8 +1014,14 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 .dark-theme #main-header .container #contact-div {
-  margin-top: 3rem;
-  align-content: flex-end;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  display: flex;
+}
+.dark-theme #main-header .container #contact-div button {
+  margin-right: 3rem;
+  align-self: flex-end;
 }
 .dark-theme #coursework {
   display: flex;
@@ -1017,6 +1065,36 @@ input[class^=btn-]:hover {
   width: 100%;
   text-align: end;
   margin-bottom: 20vh;
+}
+.dark-theme #contact a {
+  color: #ffbc00;
+}
+.dark-theme #contact a:hover {
+  color: #ffbc00;
+}
+.dark-theme #contact .social {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark-theme #contact .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.dark-theme #contact .social a:hover {
+  background: #ffbc00;
+}
+.dark-theme #contact .social a:hover .fab {
+  color: rgba(255, 255, 255, 0.7);
+}
+.dark-theme #contact .social a .fab {
+  font-size: 1.7rem;
+  color: #fff;
 }
 .dark-theme #cv {
   display: flex;
