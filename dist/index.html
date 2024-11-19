@@ -52,13 +52,19 @@
       <!-- Navbar -->
       <nav id="main-nav">
         <div id="nav-content">
-          <p id="logo"><a href="#about">KP.</a></p>
+          <p id="logo">
+            <a href="#about" aria-label="Go to the about section">KP.</a>
+          </p>
           <div id="nav-bar" class="container">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#cv">CV</a>
-            <a href="#coursework">Coursework</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" aria-label="Go to the top off the page">Home</a>
+            <a href="#about" aria-label="Go to the about section">About</a>
+            <a href="#cv" aria-label="Go to the CV section">CV</a>
+            <a href="#coursework" aria-label="Go to the coursework section"
+              >Coursework</a
+            >
+            <a href="#contact" aria-label="Go to the contact section"
+              >Contact</a
+            >
           </div>
           <!-- Light/Dark toggle -->
           <div class="toggle-container">
@@ -149,7 +155,10 @@
               <h3>Your Company</h3>
               <p>
                 My first internship consisted of 8 weeks at
-                <a href="https://www.yourcompany.se/" target="_blank"
+                <a
+                  href="https://www.yourcompany.se/"
+                  target="_blank"
+                  aria-label="Open Your Company's website"
                   >Your Company Sweden AB</a
                 >. The company was founded in 2018 offer a SaaS solution called
                 Ägaranalys. This service is designed for insurance brokers to
@@ -165,7 +174,11 @@
               <h3>Fill</h3>
               <p class="under-construction-banner">
                 My secont internship was with
-                <a href="https://www.fill.work/">Fill Technology AB</a>
+                <a
+                  href="https://www.fill.work/"
+                  aria-label="Open Fill's website"
+                  >Fill Technology AB</a
+                >
 
                 Fill was founded in 2021. The team was very welcoming and there
                 were a number of interns willing to help. My job was mainly in
@@ -230,7 +243,12 @@
             <p>Download my CV or display on screen.</p>
             <div id="cv-btns" class="py-1">
               <button class="btn-main">
-                <a href="./pdf/CV_Kristina_Palmquist.pdf" download>Download</a>
+                <a
+                  href="./pdf/CV_Kristina_Palmquist.pdf"
+                  aria-label="Save CV as PDF document"
+                  download
+                  >Download</a
+                >
               </button>
               <dialog id="myDialog" class="dialog">
                 <embed
@@ -271,6 +289,7 @@
                 href="https://htmlcss-kafehjartat.netlify.app"
                 target="_blank"
                 class="btn-light-dark"
+                aria-label="Open HTML/CSS project website"
               >
                 Visit Site
               </a>
@@ -292,6 +311,7 @@
                 href="https://native-javascript-labb2.netlify.app/"
                 target="_blank"
                 class="btn-light-dark"
+                aria-label="Open JavaScript project website"
               >
                 Visit Site
               </a>
@@ -317,6 +337,7 @@
                 href="https://webbteknik1-garnstickor.netlify.app"
                 target="_blank"
                 class="btn-light-dark"
+                aria-label="Open Webbteknik 1 project website"
               >
                 Visit Site
               </a>
@@ -340,7 +361,8 @@
               <h3>Agile / Vue.js</h3>
               <p>IT-Högskolan, 2023</p>
               <!-- <a href="https://agile-cinemap.netlify.app" target="_blank"
-              class="btn-light-dark">
+              class="btn-light-dark"
+                aria-label="Open Agile / Vue.js project website">
                 Visit Site
               </a> -->
             </div>
@@ -360,7 +382,8 @@
               <h3>Backend / Database</h3>
               <p>IT-Högskolan, 2023</p>
               <!-- <a href="https://agile-cinemap.netlify.app" target="_blank"
-                class="btn-light-dark">
+                class="btn-light-dark"
+                aria-label="Open backend / database project website">
                 Visit Site
               </a> -->
             </div>
@@ -375,7 +398,8 @@
               <h3>Java</h3>
               <p>Luleå Tekniska Högskola, 2023/2024</p>
 
-              <!-- <a href="#" target="_blank" class="btn-light-dark">
+              <!-- <a href="#" target="_blank" class="btn-light-dark"
+                aria-label="Open Java project website">
                 Visit Site
               </a> -->
             </div>
@@ -389,7 +413,8 @@
             <div class="course-header">
               <h3>Flutter</h3>
               <p>Linnéuniversitetet, 2023</p>
-              <!-- <a href="#" target="_blank" class="btn-light-dark">
+              <!-- <a href="#" target="_blank" class="btn-light-dark"
+                aria-label="Open Flutter project website">
                 Visit Site
               </a> -->
             </div>
@@ -403,7 +428,8 @@
             <div class="course-header">
               <h3>React Native</h3>
               <p>IT-Högskolan, 2023</p>
-              <!-- <a href="#" target="_blank" class="btn-light-dark">
+              <!-- <a href="#" target="_blank" class="btn-light-dark"
+                aria-label="Open React Native project website">
                 Visit Site
               </a> -->
             </div>
@@ -445,17 +471,27 @@
           <h2 class="py-1 section-title">Contact</h2>
           <p>Kristina Palmquist</p>
           <p>
-            <a href="mailto:kristina.palmquist@gmail.com"
+            <a
+              href="mailto:kristina.palmquist@gmail.com"
+              aria-label="Open mail address in email provider"
               >kristina.palmquist@gmail.com
             </a>
           </p>
           <p>0739500790</p>
           <div class="social">
-            <a href="https://github.com/KristinaPalmquist" target="_blank">
+            <a
+              href="https://github.com/KristinaPalmquist"
+              target="_blank"
+              aria-label="Open GitHub page"
+            >
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/kristinapalmquist/" target="_blank"> 
-              <i class="fab fa-linkedin"></i> 
+            <a
+              href="https://www.linkedin.com/in/kristinapalmquist/"
+              target="_blank"
+              aria-label="Open Linkedin page"
+            >
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
         </section>
